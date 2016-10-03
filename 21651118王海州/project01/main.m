@@ -1,6 +1,7 @@
+#import <Foundation/Foundation.h>
 #import "Cal.h"
 
-int main(int argc, char *argv)
+int main(int argc, char *argv[])
 {
 
   Cal* cal = [[Cal alloc] init];
@@ -8,7 +9,7 @@ int main(int argc, char *argv)
   [cal calByYear: 2016];
   [cal calByMonth:10 AndYear: 2016];
 
-  [cal release]
+  [cal release];
 
   return 0;
 }

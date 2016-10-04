@@ -1,9 +1,8 @@
 Cal: Cal.m main.m
-  clang -fno-objc-arc -framework foundation
-  Cal.m main.m -o Cal
+	clang -fno-objc-arc -framework foundation Cal.m main.m -o Cal
 
 run:
-  ./Cal
+	./Cal
 
 clean:
-  rm Cal
+	rm Cal

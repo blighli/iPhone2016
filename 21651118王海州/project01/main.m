@@ -10,7 +10,15 @@ int main(int argc, char *argv[])
 
     // usage: ./Cal
 
-    [cal calByMonth:10 AndYear: 2026];
+    int month, year;
+    NSCalendar *ns_cal = [NSCalendar currentCalendar];
+    NSDate *startDate = [[NSDate new] autorelease];
+    NSDateComponents *dateComps = [ns_cal components:NSYearCalendarUnit|NSMonthCalendarUnit|
+               NSDayCalendarUnit|NSHourCalendarUnit|NSMinuteCalendarUnit fromDate:startDate];
+    year = [dateComps year];
+    month = [dateComps month];
+
+    [cal calByMonth:month AndYear: year];
 
   } else if (argc == 2) {
 

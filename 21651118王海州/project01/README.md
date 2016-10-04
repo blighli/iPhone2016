@@ -1,5 +1,21 @@
 #Cal
 
-cal  
-cal 2016   
-cal 10 2016
+## Make
+
+```bash
+$ make
+```
+
+## Usage
+
+```bash
+./Cal  
+```
+
+```bash
+./Cal 2016 
+```  
+
+```bash
+./Cal 11 2016
+```

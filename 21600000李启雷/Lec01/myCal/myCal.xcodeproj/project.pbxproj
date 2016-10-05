@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		F4AC33DD1DA443710067381F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F4AC33DC1DA443710067381F /* main.m */; };
 		F4AC33E41DA50B310067381F /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = F4AC33E31DA50B310067381F /* Makefile */; };
+		F4AC33E91DA50E6E0067381F /* MYMonthCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = F4AC33E81DA50E6E0067381F /* MYMonthCalendarView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,6 +28,9 @@
 		F4AC33D91DA443710067381F /* myCal */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = myCal; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4AC33DC1DA443710067381F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F4AC33E31DA50B310067381F /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		F4AC33E71DA50E6E0067381F /* MYMonthCalendarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYMonthCalendarView.h; sourceTree = "<group>"; };
+		F4AC33E81DA50E6E0067381F /* MYMonthCalendarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYMonthCalendarView.m; sourceTree = "<group>"; };
+		F4AC33EA1DA50F230067381F /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +65,9 @@
 			children = (
 				F4AC33DC1DA443710067381F /* main.m */,
 				F4AC33E31DA50B310067381F /* Makefile */,
+				F4AC33E71DA50E6E0067381F /* MYMonthCalendarView.h */,
+				F4AC33E81DA50E6E0067381F /* MYMonthCalendarView.m */,
+				F4AC33EA1DA50F230067381F /* .gitignore */,
 			);
 			path = myCal;
 			sourceTree = "<group>";
@@ -124,6 +131,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4AC33E41DA50B310067381F /* Makefile in Sources */,
+				F4AC33E91DA50E6E0067381F /* MYMonthCalendarView.m in Sources */,
 				F4AC33DD1DA443710067381F /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

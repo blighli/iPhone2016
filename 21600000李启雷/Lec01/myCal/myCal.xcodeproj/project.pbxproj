@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F4AC33DD1DA443710067381F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F4AC33DC1DA443710067381F /* main.m */; };
+		F4AC33E41DA50B310067381F /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = F4AC33E31DA50B310067381F /* Makefile */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,7 @@
 /* Begin PBXFileReference section */
 		F4AC33D91DA443710067381F /* myCal */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = myCal; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4AC33DC1DA443710067381F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F4AC33E31DA50B310067381F /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			isa = PBXGroup;
 			children = (
 				F4AC33DC1DA443710067381F /* main.m */,
+				F4AC33E31DA50B310067381F /* Makefile */,
 			);
 			path = myCal;
 			sourceTree = "<group>";
@@ -120,6 +123,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4AC33E41DA50B310067381F /* Makefile in Sources */,
 				F4AC33DD1DA443710067381F /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

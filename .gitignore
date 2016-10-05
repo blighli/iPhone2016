@@ -8,3 +8,7 @@ tmp/
 temp/
 build/
 Pods/
+
+project.xcworkspace
+xcuserdata
+

@@ -1,2 +1,2 @@
 cal: main.m
-    clang -framework foundation main.m -o cal
+	clang -framework foundation main.m -o cal

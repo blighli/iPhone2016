@@ -9,6 +9,7 @@
 #import "ViewController.h"
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UILabel *msgLabel;
 
 @end
 
@@ -17,6 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    _msgLabel.text = @"Good";
 }
 
 
@@ -25,5 +27,11 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)btnHelloPressed:(id)sender {
+     _msgLabel.text = @"Hello";
+}
+- (IBAction)btnByePressed:(id)sender {
+     _msgLabel.text = @"Bye";
+}
 
 @end

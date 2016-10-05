@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -18,32 +19,45 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Hello, World" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gMl-Un-9hS">
-                                <frame key="frameInset" minX="141" minY="169" width="93" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello, World" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gMl-Un-9hS">
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="93" id="Isf-6S-Q2T"/>
                                     <constraint firstAttribute="height" constant="21" id="gXR-qw-tUq"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lJc-K9-aBl">
-                                <frame key="frameInset" minX="141" minY="298" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Left"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lJc-K9-aBl">
+                                <state key="normal" title="Hello"/>
+                                <connections>
+                                    <action selector="btnHelloPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5Rl-x8-ddH"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uvu-jQ-lWu">
-                                <frame key="frameInset" minX="196" minY="298" width="36" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Right"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uvu-jQ-lWu">
+                                <state key="normal" title="Bye"/>
+                                <connections>
+                                    <action selector="btnByePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="k5q-6f-II1"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="gMl-Un-9hS" secondAttribute="trailing" constant="100" id="29w-jm-NiB"/>
+                            <constraint firstItem="lJc-K9-aBl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="100" id="PIn-O7-O0o"/>
+                            <constraint firstItem="gMl-Un-9hS" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="150" id="RBe-lD-LjB"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Uvu-jQ-lWu" secondAttribute="trailing" constant="100" id="WLE-sd-Je4"/>
+                            <constraint firstItem="Uvu-jQ-lWu" firstAttribute="top" secondItem="gMl-Un-9hS" secondAttribute="bottom" constant="100" id="ZfO-mY-FPj"/>
+                            <constraint firstItem="lJc-K9-aBl" firstAttribute="top" secondItem="gMl-Un-9hS" secondAttribute="bottom" constant="100" id="b3D-tM-nYg"/>
+                            <constraint firstItem="gMl-Un-9hS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="100" id="elU-EU-ln4"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="msgLabel" destination="gMl-Un-9hS" id="Ri0-QB-kUQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="93.599999999999994" y="43.628185907046479"/>
         </scene>
     </scenes>
 </document>

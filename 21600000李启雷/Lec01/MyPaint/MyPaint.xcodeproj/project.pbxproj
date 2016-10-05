@@ -13,6 +13,7 @@
 		F434A2861DA2C90200F0B94B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F434A2841DA2C90200F0B94B /* Main.storyboard */; };
 		F434A2881DA2C90200F0B94B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F434A2871DA2C90200F0B94B /* Assets.xcassets */; };
 		F434A28B1DA2C90200F0B94B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F434A2891DA2C90200F0B94B /* LaunchScreen.storyboard */; };
+		F43B8A2E1DA574CF00E73AFA /* MyView.m in Sources */ = {isa = PBXBuildFile; fileRef = F43B8A2D1DA574CF00E73AFA /* MyView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		F434A2871DA2C90200F0B94B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F434A28A1DA2C90200F0B94B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F434A28C1DA2C90200F0B94B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F43B8A2C1DA574CF00E73AFA /* MyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyView.h; sourceTree = "<group>"; };
+		F43B8A2D1DA574CF00E73AFA /* MyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,12 +63,14 @@
 			children = (
 				F434A27E1DA2C90200F0B94B /* AppDelegate.h */,
 				F434A27F1DA2C90200F0B94B /* AppDelegate.m */,
+				F434A2871DA2C90200F0B94B /* Assets.xcassets */,
+				F434A28C1DA2C90200F0B94B /* Info.plist */,
+				F434A2891DA2C90200F0B94B /* LaunchScreen.storyboard */,
+				F434A2841DA2C90200F0B94B /* Main.storyboard */,
+				F43B8A2C1DA574CF00E73AFA /* MyView.h */,
+				F43B8A2D1DA574CF00E73AFA /* MyView.m */,
 				F434A2811DA2C90200F0B94B /* ViewController.h */,
 				F434A2821DA2C90200F0B94B /* ViewController.m */,
-				F434A2841DA2C90200F0B94B /* Main.storyboard */,
-				F434A2871DA2C90200F0B94B /* Assets.xcassets */,
-				F434A2891DA2C90200F0B94B /* LaunchScreen.storyboard */,
-				F434A28C1DA2C90200F0B94B /* Info.plist */,
 				F434A27B1DA2C90200F0B94B /* Supporting Files */,
 			);
 			path = MyPaint;
@@ -151,6 +156,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F43B8A2E1DA574CF00E73AFA /* MyView.m in Sources */,
 				F434A2831DA2C90200F0B94B /* ViewController.m in Sources */,
 				F434A2801DA2C90200F0B94B /* AppDelegate.m in Sources */,
 				F434A27D1DA2C90200F0B94B /* main.m in Sources */,

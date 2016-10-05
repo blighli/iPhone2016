@@ -39,20 +39,28 @@
                                     <action selector="btnByePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="k5q-6f-II1"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QXU-2K-0e3" customClass="MyView">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="gMl-Un-9hS" secondAttribute="trailing" constant="100" id="29w-jm-NiB"/>
+                            <constraint firstItem="QXU-2K-0e3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="30" id="GkF-Vh-adm"/>
                             <constraint firstItem="lJc-K9-aBl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="100" id="PIn-O7-O0o"/>
                             <constraint firstItem="gMl-Un-9hS" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="150" id="RBe-lD-LjB"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Uvu-jQ-lWu" secondAttribute="trailing" constant="100" id="WLE-sd-Je4"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="QXU-2K-0e3" secondAttribute="bottom" constant="30" id="ZAy-zw-4IL"/>
                             <constraint firstItem="Uvu-jQ-lWu" firstAttribute="top" secondItem="gMl-Un-9hS" secondAttribute="bottom" constant="100" id="ZfO-mY-FPj"/>
                             <constraint firstItem="lJc-K9-aBl" firstAttribute="top" secondItem="gMl-Un-9hS" secondAttribute="bottom" constant="100" id="b3D-tM-nYg"/>
                             <constraint firstItem="gMl-Un-9hS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="100" id="elU-EU-ln4"/>
+                            <constraint firstItem="QXU-2K-0e3" firstAttribute="top" secondItem="gMl-Un-9hS" secondAttribute="bottom" constant="200" id="gT1-ZX-Jdz"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="QXU-2K-0e3" secondAttribute="trailing" constant="30" id="wXS-yA-1xE"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="msgLabel" destination="gMl-Un-9hS" id="Ri0-QB-kUQ"/>
+                        <outlet property="myView" destination="QXU-2K-0e3" id="tcn-FX-hv1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

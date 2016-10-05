@@ -12,12 +12,15 @@
 @interface MYCalendarMonthView()
 {
     NSMutableString* _viewBuffer;
+    NSInteger _month;
 }
 
 + (NSArray*) weekdayNames;
-- (void)writeTitleOfMonth:(NSInteger) month andYear:(NSInteger)year;
-- (void)writeTitleOfWeekdays;
-- (void)writeDaysOfMonth: (NSInteger) month andYear: (NSInteger) year;
+
+- (void) setMonth: (NSInteger) month andYear: (NSInteger) year inWholeYear: (Boolean) wholeYear;
+- (void) writeTitleOfMonth:(NSInteger) month andYear:(NSInteger)year inWholeYear: (Boolean)wholeYear;
+- (void) writeTitleOfWeekdays;
+- (void) writeDaysOfMonth: (NSInteger) month andYear: (NSInteger) year;
 
 
 @end
@@ -54,7 +57,7 @@
     
 }
 
-- (instancetype) initWithMonth: (NSInteger) month andYear: (NSInteger) year;
+- (instancetype) initWithMonth: (NSInteger) month andYear: (NSInteger) year inWholeYear: (Boolean)wholeYear;
 {
     self = [super init];
     if (self) {
@@ -62,15 +65,20 @@
                                                                  withString:@" "
                                                             startingAtIndex:0];
         _viewBuffer = [NSMutableString stringWithString: stringBuffer];
-        [self setMonth: month andYear: year];
+        
+        _month = month;
+        [self setMonth: month andYear: year inWholeYear: wholeYear];
     }
     return self;
 }
 
-- (void) writeTitleOfMonth: (NSInteger) month andYear: (NSInteger) year
+- (void) writeTitleOfMonth: (NSInteger) month andYear: (NSInteger) year inWholeYear: (Boolean)wholeYear
 {
     NSString* monthTitle = [NSString stringWithFormat: @"%@ %ld", [[self class]monthNames][month-1], (long)year];
-    NSInteger monthTitleStartIndex = (MYCalendarMonthViewColumns - monthTitle.length) / 2;
+    if(wholeYear){
+        monthTitle = [NSString stringWithFormat: @"%@", [[self class]monthNames][month-1]];
+    }
+    NSInteger monthTitleStartIndex = (MYCalendarMonthViewColumns - monthTitle.length - 1) / 2;
     [_viewBuffer replaceCharactersInRange:NSMakeRange(monthTitleStartIndex, monthTitle.length)
                                withString:monthTitle];
 }
@@ -107,9 +115,9 @@
     }
 }
 
-- (void) setMonth: (NSInteger) month andYear: (NSInteger) year
+- (void) setMonth: (NSInteger) month andYear: (NSInteger) year inWholeYear: (Boolean) wholeYear
 {
-    [self writeTitleOfMonth:month andYear:year];
+    [self writeTitleOfMonth:month andYear:year inWholeYear:wholeYear];
     [self writeTitleOfWeekdays];
     [self writeDaysOfMonth:month andYear:year];
 }
@@ -117,7 +125,20 @@
 - (void) printView
 {
     for(NSInteger row = 0; row < MYCalendarMonthViewRows; row++) {
-        println([_viewBuffer substringWithRange: NSMakeRange(MYCalendarMonthViewColumns * row, MYCalendarMonthViewColumns)]);
+        NSString* rowString = [_viewBuffer substringWithRange: NSMakeRange(MYCalendarMonthViewColumns * row, MYCalendarMonthViewColumns)];
+        println(rowString);
+    }
+}
+
+- (void) writeMonthToBuffer: (NSMutableString*) buffer withColumns: (NSInteger) width
+{
+    for(NSInteger row = 0; row < MYCalendarMonthViewRows; row++) {
+        NSInteger rowsOfTitle = 2;
+        NSInteger rowsAbove = rowsOfTitle + MYCalendarMonthViewRows * ( (_month - 1) / 3 ) + row;
+        NSInteger colsBefore = (MYCalendarMonthViewColumns + 1) * ((_month -1) % 3);
+        NSInteger startIndex = width * rowsAbove+ colsBefore;
+        NSString* rowString = [_viewBuffer substringWithRange: NSMakeRange(MYCalendarMonthViewColumns * row, MYCalendarMonthViewColumns)];
+        [buffer replaceCharactersInRange:NSMakeRange(startIndex, MYCalendarMonthViewColumns) withString: rowString];
     }
 }
 

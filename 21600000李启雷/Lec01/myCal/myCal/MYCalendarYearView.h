@@ -11,5 +11,6 @@
 @interface MYCalendarYearView : NSObject
 
 - (instancetype) initWithYear: (NSInteger) year;
+- (void) printView;
 
 @end

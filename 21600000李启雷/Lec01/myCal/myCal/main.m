@@ -27,6 +27,7 @@
 
 #import <Foundation/Foundation.h>
 #import "MYCalendarMonthView.h"
+#import "MYCalendarYearView.h"
 #import "Utils.h"
 
 NSInteger yearFromString(const char* str)
@@ -65,10 +66,14 @@ NSInteger monthFromString(const char* str) {
 }
 
 void printMonth(NSInteger month, NSInteger year) {
-    MYCalendarMonthView* view = [[MYCalendarMonthView alloc] initWithMonth:month andYear:year];
+    MYCalendarMonthView* view = [[MYCalendarMonthView alloc] initWithMonth:month andYear:year inWholeYear: NO];
     [view printView];
 }
 
+void printYear(NSInteger year) {
+    MYCalendarYearView* view = [[MYCalendarYearView alloc] initWithYear:year];
+    [view printView];
+}
 
 
 int main(int argc, const char * argv[]) {
@@ -86,6 +91,9 @@ int main(int argc, const char * argv[]) {
         }
         else if(argc == 2) {
             year = yearFromString(argv[1]);
+            if(year !=0){
+                printYear(year);
+            }
         }
         else if(argc == 3) {
             month = monthFromString(argv[1]);

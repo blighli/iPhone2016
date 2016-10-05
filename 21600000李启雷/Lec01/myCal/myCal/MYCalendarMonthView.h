@@ -19,7 +19,9 @@ enum {
 
 + (NSArray*) monthNames;
 
-- (instancetype) initWithMonth: (NSInteger) month andYear: (NSInteger) year;
+- (instancetype) initWithMonth: (NSInteger) month andYear: (NSInteger) year inWholeYear: (Boolean)wholeYear;
 - (void) printView;
+
+- (void) writeMonthToBuffer: (NSMutableString*) buffer withColumns: (NSInteger) width;
 
 @end

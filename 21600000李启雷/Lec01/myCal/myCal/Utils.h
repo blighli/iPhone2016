@@ -1,13 +1,11 @@
 //
-//  MYMonthCalendarView.m
+//  Utils.h
 //  myCal
 //
 //  Created by liqilei on 2016/10/5.
 //  Copyright © 2016年 liqilei. All rights reserved.
 //
 
-#import "MYMonthCalendarView.h"
+#import <Foundation/Foundation.h>
 
-@implementation MYMonthCalendarView
-
-@end
+void println(NSString* strLine);

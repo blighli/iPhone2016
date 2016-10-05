@@ -1,5 +1,5 @@
 //
-//  MYMonthCalendarView.h
+//  MYCalendarYearView.h
 //  myCal
 //
 //  Created by liqilei on 2016/10/5.
@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
-@interface MYMonthCalendarView : NSObject
+@interface MYCalendarYearView : NSObject
+
+- (instancetype) initWithYear: (NSInteger) year;
 
 @end

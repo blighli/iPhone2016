@@ -23,35 +23,58 @@
  note:
  In calendar month is from 1 to 12, and month day is from 1 to 31, and week day is from 1(sunday) to 7(saturday)
  
-*/
+ */
 
 #import <Foundation/Foundation.h>
+#import "MYCalendarMonthView.h"
+#import "Utils.h"
 
-
-void NSStringPrint(NSString* str) {
-    printf("%s", [str UTF8String]);
+NSInteger yearFromString(const char* str)
+{
+    NSString *strYear = [NSString stringWithUTF8String: str];
+    NSInteger year = [strYear integerValue];
+    if(year < 1 || year > 9999) {
+        println([NSString stringWithFormat: @"cal: year %@ not in range 1..9999",strYear]);
+        return 0;
+    }
+    return year;
 }
 
-void NSStringPrintln(NSString* str) {
-    printf("%s\n", [str UTF8String]);
+NSInteger monthFromString(const char* str) {
+    NSString *strMonth = [NSString stringWithUTF8String: str];
+    NSInteger month = 0;
+    if(strMonth.length<3) {
+        month = strMonth.integerValue;
+        if(month < 1 || month > 12) {
+            month = 0;
+        }
+    }
+    else{
+        for(NSInteger index=1; index <= [MYCalendarMonthView monthNames].count; index++){
+            NSString* monthName = [MYCalendarMonthView monthNames][index - 1];
+            if([[monthName lowercaseString] hasPrefix: [strMonth lowercaseString]]) {
+                month = index;
+                break;
+            }
+        }
+    }
+    if(month == 0) {
+        println([NSString stringWithFormat: @"cal: %@ is neither a month number (1..12) nor a name", strMonth]);
+    }
+    return month;
 }
 
-void writeMonthTitle(NSString* monthTitle) {
-    
+void printMonth(NSInteger month, NSInteger year) {
+    MYCalendarMonthView* view = [[MYCalendarMonthView alloc] initWithMonth:month andYear:year];
+    [view printView];
 }
+
+
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         
-        NSArray* monthsEN = @[@"January", @"February", @"March", @"April",
-                              @"May", @"June", @"July", @"August",
-                              @"September", @"October", @"November", @"December"];
-        
-        NSArray* weekdaysEN = @[@"Su", @"Mo", @"Tu", @"We", @"Th", @"Fr", @"Sa"];
-
         NSCalendar* calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
-
-        
         NSDate* date = [NSDate date];
         NSInteger year = 0;
         NSInteger month = 0;
@@ -59,96 +82,21 @@ int main(int argc, const char * argv[]) {
         if(argc == 1) {
             year = [calendar component:NSCalendarUnitYear fromDate:date];
             month = [calendar component:NSCalendarUnitMonth fromDate:date];
+            printMonth(month, year);
         }
         else if(argc == 2) {
-            NSString *strYear = [NSString stringWithUTF8String: argv[1]];
-            year = [strYear integerValue];
-            if(year < 1 || year > 9999) {
-                NSStringPrintln([NSString stringWithFormat: @"cal: year %@ not in range 1..9999",strYear]);
-                return 0;
-            }
+            year = yearFromString(argv[1]);
         }
         else if(argc == 3) {
-            NSString *strMonth = [NSString stringWithUTF8String: argv[1]];
-            if(strMonth.length<3) {
-                month = strMonth.integerValue;
-                if(month < 1 || month > 12) {
-                    month = 0;
-                }
+            month = monthFromString(argv[1]);
+            year = yearFromString(argv[2]);
+            if(year !=0 && month != 0){
+                printMonth(month, year);
             }
-            else{
-                for(NSInteger iMonth=1; iMonth<=12; iMonth++){
-                    NSString *monthNameEn = monthsEN[iMonth-1];
-                    if([[monthNameEn lowercaseString] hasPrefix: [strMonth lowercaseString]]) {
-                        month = iMonth;
-                        break;
-                    }
-                }
-            }
-            if(month == 0) {
-                NSStringPrintln([NSString stringWithFormat: @"cal: %@ is neither a month number (1..12) nor a name",strMonth]);
-                return 0;
-            }
-            
-            NSString *strYear = [NSString stringWithUTF8String: argv[2]];
-            year = [strYear integerValue];
-            if(year < 1 || year > 9999) {
-                NSStringPrintln([NSString stringWithFormat: @"cal: year %@ not in range 1..9999",strYear]);
-                return 0;
-            }
-            
-            NSDateComponents *comps = [[NSDateComponents alloc] init];
-            comps.year = year;
-            comps.month = month;
-            date = [calendar dateFromComponents:comps];
-            
         }
         else {
             NSLog(@"cal: too many args!");
         }
-        
-        NSRange daysInMonth = [calendar rangeOfUnit: NSCalendarUnitDay inUnit:NSCalendarUnitMonth forDate:date];
-        
-        
-        NSString* monthTitle = [NSString stringWithFormat: @"%@ %ld", monthsEN[month-1], (long)year];
-        NSString* weekdaysTitle = [weekdaysEN componentsJoinedByString:@" "];
-        
-        NSInteger calRows = 8;
-        NSInteger calCols = 21;
-        NSMutableString *monthCal = [NSMutableString stringWithString:
-                                     [[NSString string] stringByPaddingToLength: calRows*calCols
-                                                                     withString: @" " startingAtIndex:0]];
-        
-        NSInteger monthTitleStartIndex = (calCols - monthTitle.length) / 2;
-        [monthCal replaceCharactersInRange:NSMakeRange(monthTitleStartIndex, monthTitle.length) withString:monthTitle];
-        [monthCal replaceCharactersInRange:NSMakeRange(calCols+1, weekdaysTitle.length) withString:weekdaysTitle];
-  
-        
-        for(NSInteger dayInMonth=1; dayInMonth <= daysInMonth.length; dayInMonth++) {
-            NSDateComponents *comps = [[NSDateComponents alloc] init];
-            comps.year = year;
-            comps.month = month;
-            comps.day = dayInMonth;
-            NSDate *iDate = [calendar dateFromComponents: comps];
-            
-            NSInteger weekInMonth = [calendar component:NSCalendarUnitWeekOfMonth fromDate:iDate];
-            NSInteger dayInWeek = [calendar component:NSCalendarUnitWeekday fromDate:iDate];
-            
-            NSString *dayString = [NSString stringWithFormat:@"%3ld", (long)dayInMonth];
-            
-            //NSLog(@"%@", dayString);
-            
-            [monthCal replaceCharactersInRange:NSMakeRange(calCols*(2+weekInMonth-1)+(dayInWeek-1)*3, 3) withString:dayString];
-            
-        }
-        
-        //NSStringPrintln(monthCal);
-        
-        for(NSInteger row=0; row < calRows; row++) {
-            NSStringPrintln([monthCal substringWithRange: NSMakeRange(calCols*row, calCols)]);
-        }
-        
-
     }
     return 0;
 }

@@ -87,33 +87,6 @@
   NSLog(s);
 }
 
-// getter and setter
-/*
-- (void)setFirstDayWeekDay:(NSUInteger)firstDay {
-  firstDayWeekDay = firstDay;
-}
-- (NSUInteger)firstDayWeekDay {
-  return firstDayWeekDay;
-}
-- (void)setMaxRangeOfMonth:(NSUInteger)MaxMon {
-  maxRangeOfMonth = MaxMon;
-}
-- (NSUInteger)maxRangeOfMonth {
-  return maxRangeOfMonth;
-}
-- (void)setMonthIndator:(int)monInd {
-  monthIndator = monInd;
-}
-- (int)monthIndator {
-  return monthIndator;
-}
-- (void)setYearIndator:(int)yearInd {
-  yearIndator = yearInd;
-}
-- (int)yearIndator {
-  return yearIndator;
-}
-*/
 @end
 
 @implementation YearFormatter
@@ -200,14 +173,4 @@
    }
    NSLog(ms);
 }
- // getter and setter
- /*
-- (void)setYearIndator:(int)yearInd {
-  yearIndator = yearInd;
-}
-
-- (int)yearIndator {
-  return yearIndator;
-}
-*/
 @end

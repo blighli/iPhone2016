@@ -13,7 +13,12 @@
 
 - (void) drawRect:(CGRect)rect {
     CGContextRef context = UIGraphicsGetCurrentContext();
-    CGContextFillRect(context, CGRectMake(10, 10, 100, 100));
+    
+    CGContextSetRGBFillColor(context, 0.5, 0, 0.5, 0.4);
+    CGContextFillRect(context, CGRectMake(rect.origin.x+10,
+                                          rect.origin.y+10,
+                                          rect.size.width-20,
+                                          rect.size.width - 20));
 }
 
 @end

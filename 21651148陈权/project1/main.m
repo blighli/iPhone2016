@@ -26,8 +26,8 @@ int main(int argc,const char *argv[]){
         [mf print];
     }else{
       NSDateComponents *todayComps =
-          [[NSCalendar currentCalendar] components:NSDayCalendarUnit | NSMonthCalendarUnit |
-                               NSYearCalendarUnit | NSWeekdayCalendarUnit
+          [[NSCalendar currentCalendar] components:NSCalendarUnitDay | NSCalendarUnitMonth |
+                               NSCalendarUnitYear | NSCalendarUnitWeekday
                       fromDate:[NSDate date]];
       int year = (int)[todayComps year];
       int month = (int)[todayComps month];

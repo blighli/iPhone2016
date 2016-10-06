@@ -16,8 +16,8 @@
       stringWithFormat:@"%i-%i-01 12:00:00", y, m]; //自定义每个月的第一天
   NSDate *firstDayOfMonth = [formatter dateFromString:dateStr];
   NSDateComponents *firstDayOfMonthComponents =
-      [calendar components:NSDayCalendarUnit | NSMonthCalendarUnit |
-                           NSYearCalendarUnit | NSWeekdayCalendarUnit
+      [calendar components:NSCalendarUnitDay | NSCalendarUnitMonth |
+                           NSCalendarUnitYear | NSCalendarUnitWeekday
                   fromDate:firstDayOfMonth];
 
   int dayRange = [self judgeRangeByMonth:m AndYear:y];

@@ -6,15 +6,15 @@
 
 @interface MonthFormatter:NSObject
         //当月第一天的星期数目
-        NSUInteger firstDayWeekDay;
+        @property NSUInteger firstDayWeekDay;
         //当月的最大天数
-        NSUInteger maxRangeOfMonth;
+        @property NSUInteger maxRangeOfMonth;
         //目前月份
-        int monthIndator;
+        @property int monthIndator;
        //当前年份
-         int yearIndator; 
+        @property int yearIndator; 
 
-         int* monthArray;
+        @property int* monthArray;
 
     // - (void) setFirstDayWeekDay:(NSUInteger)day;
     - (NSMutableArray * ) getArray;
@@ -40,7 +40,7 @@
 
 @interface YearFormatter:NSObject
    //当前年份
-    int yearIndator;
+    @property int yearIndator;
     + (YearFormatter *) initWithYear:(int)y;
     - (void) setYearIndator:(int)yearInd;
     - (int) yearIndator;

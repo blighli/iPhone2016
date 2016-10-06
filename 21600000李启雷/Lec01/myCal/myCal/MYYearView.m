@@ -40,7 +40,7 @@ enum {
 - (void)writeTitleOfYear
 {
     NSString* title = [NSString stringWithFormat: @"%ld", (long)_year];
-    NSInteger x = (_viewBuffer.width - title.length) / 2;
+    NSInteger x = (_viewBuffer.width - title.length) / 2 - 1;
     [_viewBuffer writeString:title toX:x andY:0];
 }
 

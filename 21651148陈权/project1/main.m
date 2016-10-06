@@ -25,7 +25,6 @@ int main(int argc,const char *argv[]){
         MonthFormatter *mf  = [MonthFormatter  initByMonth:month AndYear: year];
         [mf print];
     }else{
-      NSLog(@"no argument");
       NSDateComponents *todayComps =
           [[NSCalendar currentCalendar] components:NSDayCalendarUnit | NSMonthCalendarUnit |
                                NSYearCalendarUnit | NSWeekdayCalendarUnit

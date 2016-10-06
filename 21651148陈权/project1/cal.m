@@ -76,7 +76,7 @@
   int i;
   for (i = 0; i < 42; i++) {
     id value = [dataArray objectAtIndex:i];
-    NSString *str = (NSString *)value;
+    NSMutableString *str = [NSMutableString stringWithString:(NSString *)value];
     [s appendString:str];
     if (i % 7 == 0) {
       [s appendString:@"\n"];

@@ -50,7 +50,7 @@
   int i, j;
   NSMutableArray *array = [NSMutableArray arrayWithCapacity:42];
   for (i = 0; i < 42; ++i) {
-    [array addObject:[NSString stringWithString:@"  "]];
+    [array addObject:@"  "];
   }
   for (j = self.firstDayWeekDay;
        j < self.maxRangeOfMonth + self.firstDayWeekDay; ++j) {
@@ -135,11 +135,11 @@
         // [mf print];
     }
     NSLog(@"%35i                               \n",self.yearIndator);
-    NSString *mon1  = [NSString stringWithString:@"        一月                   二月                   三月        \n"];
-    NSString *mon2  = [NSString stringWithString:@"        四月                   五月                   六月        \n"];
-    NSString *mon3  = [NSString stringWithString:@"        七月                   八月                   九月        \n"];
-    NSString *mon4  = [NSString stringWithString:@"        十月               十一月              十二月        \n"];
-    NSString *wkstr = [NSString stringWithString:@"日 一 二 三 四 五 六   日 一 二 三 四 五 六   日 一 二 三 四 五 六\n"];
+    NSString *mon1  = @"        一月                   二月                   三月        \n";
+    NSString *mon2  = @"        四月                   五月                   六月        \n";
+    NSString *mon3  = @"        七月                   八月                   九月        \n";
+    NSString *mon4  = @"        十月               十一月              十二月        \n";
+    NSString *wkstr = @"日 一 二 三 四 五 六   日 一 二 三 四 五 六   日 一 二 三 四 五 六\n";
 
    NSMutableString *ms= [NSMutableString stringWithString:mon1];
    [ms appendString:wkstr];
@@ -205,8 +205,9 @@
 - (void)setYearIndator:(int)yearInd {
   yearIndator = yearInd;
 }
-*/
+
 - (int)yearIndator {
   return yearIndator;
 }
+*/
 @end

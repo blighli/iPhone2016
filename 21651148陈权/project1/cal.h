@@ -19,17 +19,17 @@
     // - (void) setFirstDayWeekDay:(NSUInteger)day;
     - (NSMutableArray * ) getArray;
 
-    //- (void) setFirstDayWeekDay:(NSUInteger)day;
-    //- (NSUInteger) firstDayWeekDay;
+    - (void) setFirstDayWeekDay:(NSUInteger)day;
+    - (NSUInteger) firstDayWeekDay;
 
-     //- (void) setMaxRangeOfMonth:(NSUInteger)MaxMon;
-    //- (NSUInteger) maxRangeOfMonth;
+     - (void) setMaxRangeOfMonth:(NSUInteger)MaxMon;
+    - (NSUInteger) maxRangeOfMonth;
 
-    //- (void) setMonthIndator:(int)monInd;
-    //- (int) monthIndator;
+    - (void) setMonthIndator:(int)monInd;
+    - (int) monthIndator;
 
-    //- (void) setYearIndator:(int)yearInd;
-    //- (int) yearIndator;
+    - (void) setYearIndator:(int)yearInd;
+    - (int) yearIndator;
 
     +(MonthFormatter * ) initByMonth:(int) m AndYear:(int) y;
 
@@ -42,8 +42,8 @@
    //当前年份
     @property int yearIndator;
     + (YearFormatter *) initWithYear:(int)y;
-    //- (void) setYearIndator:(int)yearInd;
-    //- (int) yearIndator;
+    - (void) setYearIndator:(int)yearInd;
+    - (int) yearIndator;
 
 
   //打印方法

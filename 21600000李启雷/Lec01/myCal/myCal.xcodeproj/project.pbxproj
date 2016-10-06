@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F43B8A311DA6753A00E73AFA /* MYViewBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = F43B8A301DA6753A00E73AFA /* MYViewBuffer.m */; };
+		F43B8A341DA6A22000E73AFA /* MYMonthView.m in Sources */ = {isa = PBXBuildFile; fileRef = F43B8A331DA6A22000E73AFA /* MYMonthView.m */; };
+		F43B8A371DA6A23D00E73AFA /* MYYearView.m in Sources */ = {isa = PBXBuildFile; fileRef = F43B8A361DA6A23D00E73AFA /* MYYearView.m */; };
 		F4AC33DD1DA443710067381F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F4AC33DC1DA443710067381F /* main.m */; };
 		F4AC33E41DA50B310067381F /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = F4AC33E31DA50B310067381F /* Makefile */; };
 		F4AC33E91DA50E6E0067381F /* MYCalendarMonthView.m in Sources */ = {isa = PBXBuildFile; fileRef = F4AC33E81DA50E6E0067381F /* MYCalendarMonthView.m */; };
@@ -27,6 +30,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		F43B8A2F1DA6753A00E73AFA /* MYViewBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYViewBuffer.h; sourceTree = "<group>"; };
+		F43B8A301DA6753A00E73AFA /* MYViewBuffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYViewBuffer.m; sourceTree = "<group>"; };
+		F43B8A321DA6A22000E73AFA /* MYMonthView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYMonthView.h; sourceTree = "<group>"; };
+		F43B8A331DA6A22000E73AFA /* MYMonthView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYMonthView.m; sourceTree = "<group>"; };
+		F43B8A351DA6A23D00E73AFA /* MYYearView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYYearView.h; sourceTree = "<group>"; };
+		F43B8A361DA6A23D00E73AFA /* MYYearView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYYearView.m; sourceTree = "<group>"; };
 		F4AC33D91DA443710067381F /* myCal */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = myCal; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4AC33DC1DA443710067381F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F4AC33E31DA50B310067381F /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
@@ -78,6 +87,12 @@
 				F4AC33F01DA543B50067381F /* MYCalendarYearView.m */,
 				F4AC33EC1DA53C3D0067381F /* Utils.h */,
 				F4AC33ED1DA53C3D0067381F /* Utils.m */,
+				F43B8A2F1DA6753A00E73AFA /* MYViewBuffer.h */,
+				F43B8A301DA6753A00E73AFA /* MYViewBuffer.m */,
+				F43B8A321DA6A22000E73AFA /* MYMonthView.h */,
+				F43B8A331DA6A22000E73AFA /* MYMonthView.m */,
+				F43B8A351DA6A23D00E73AFA /* MYYearView.h */,
+				F43B8A361DA6A23D00E73AFA /* MYYearView.m */,
 			);
 			path = myCal;
 			sourceTree = "<group>";
@@ -141,9 +156,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4AC33E41DA50B310067381F /* Makefile in Sources */,
+				F43B8A371DA6A23D00E73AFA /* MYYearView.m in Sources */,
 				F4AC33E91DA50E6E0067381F /* MYCalendarMonthView.m in Sources */,
 				F4AC33DD1DA443710067381F /* main.m in Sources */,
 				F4AC33EE1DA53C3D0067381F /* Utils.m in Sources */,
+				F43B8A311DA6753A00E73AFA /* MYViewBuffer.m in Sources */,
+				F43B8A341DA6A22000E73AFA /* MYMonthView.m in Sources */,
 				F4AC33F11DA543B50067381F /* MYCalendarYearView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -273,6 +291,7 @@
 				F4AC33E21DA443710067381F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

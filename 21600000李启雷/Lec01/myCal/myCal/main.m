@@ -30,6 +30,10 @@
 #import "MYCalendarYearView.h"
 #import "Utils.h"
 
+#import "MYMonthView.h"
+#import "MYYearView.h"
+#import "MYViewBuffer.h"
+
 NSInteger yearFromString(const char* str)
 {
     NSString *strYear = [NSString stringWithUTF8String: str];
@@ -66,19 +70,22 @@ NSInteger monthFromString(const char* str) {
 }
 
 void printMonth(NSInteger month, NSInteger year) {
-    MYCalendarMonthView* view = [[MYCalendarMonthView alloc] initWithMonth:month andYear:year inWholeYear: NO];
-    [view printView];
+    MYMonthView* view = [[MYMonthView alloc] initWithMonth:month andYear:year];
+    [view.viewBuffer display];
 }
 
 void printYear(NSInteger year) {
-    MYCalendarYearView* view = [[MYCalendarYearView alloc] initWithYear:year];
-    [view printView];
+    MYYearView* view = [[MYYearView alloc] initWithYear:year];
+    [view.viewBuffer display];
 }
 
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         
+        printYear(2016);
+        return 0;
+    
         NSCalendar* calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
         NSDate* date = [NSDate date];
         NSInteger year = 0;

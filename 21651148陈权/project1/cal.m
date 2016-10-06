@@ -67,7 +67,7 @@
                        @"十一月", @"十二月", nil];
 
   NSMutableString *s = [NSMutableString
-      stringWithFormat:@"%8@ %-9i\n日 一 二 三 四 五 六",
+      stringWithFormat:@"     %@ %-9i\n日 一 二 三 四 五 六",
                        (NSString *)[MonthArray
                            objectAtIndex:self.monthIndator - 1],
                        self.yearIndator, self.maxRangeOfMonth];
@@ -138,7 +138,7 @@
     NSString *mon1  = @"        一月                   二月                   三月        \n";
     NSString *mon2  = @"        四月                   五月                   六月        \n";
     NSString *mon3  = @"        七月                   八月                   九月        \n";
-    NSString *mon4  = @"        十月               十一月              十二月        \n";
+    NSString *mon4  = @"        十月                 十一月                十二月        \n";
     NSString *wkstr = @"日 一 二 三 四 五 六   日 一 二 三 四 五 六   日 一 二 三 四 五 六\n";
 
    NSMutableString *ms= [NSMutableString stringWithString:mon1];

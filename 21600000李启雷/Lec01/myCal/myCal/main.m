@@ -26,20 +26,21 @@
  */
 
 #import <Foundation/Foundation.h>
-#import "MYCalendarMonthView.h"
-#import "MYCalendarYearView.h"
-#import "Utils.h"
-
 #import "MYMonthView.h"
 #import "MYYearView.h"
 #import "MYViewBuffer.h"
+
+void printString(NSString* str)
+{
+    printf("%s\n",str.UTF8String);
+}
 
 NSInteger yearFromString(const char* str)
 {
     NSString *strYear = [NSString stringWithUTF8String: str];
     NSInteger year = [strYear integerValue];
     if(year < 1 || year > 9999) {
-        println([NSString stringWithFormat: @"cal: year %@ not in range 1..9999",strYear]);
+        printString([NSString stringWithFormat: @"cal: year %@ not in range 1..9999",strYear]);
         return 0;
     }
     return year;
@@ -55,8 +56,8 @@ NSInteger monthFromString(const char* str) {
         }
     }
     else{
-        for(NSInteger index=1; index <= [MYCalendarMonthView monthNames].count; index++){
-            NSString* monthName = [MYCalendarMonthView monthNames][index - 1];
+        for(NSInteger index=1; index <= [MYMonthView monthNames].count; index++){
+            NSString* monthName = [MYMonthView monthNames][index - 1];
             if([[monthName lowercaseString] hasPrefix: [strMonth lowercaseString]]) {
                 month = index;
                 break;
@@ -64,13 +65,13 @@ NSInteger monthFromString(const char* str) {
         }
     }
     if(month == 0) {
-        println([NSString stringWithFormat: @"cal: %@ is neither a month number (1..12) nor a name", strMonth]);
+        printString([NSString stringWithFormat: @"cal: %@ is neither a month number (1..12) nor a name", strMonth]);
     }
     return month;
 }
 
 void printMonth(NSInteger month, NSInteger year) {
-    MYMonthView* view = [[MYMonthView alloc] initWithMonth:month andYear:year];
+    MYMonthView* view = [[MYMonthView alloc] initWithMonth:month andYear:year andStandAlone:YES];
     [view.viewBuffer display];
 }
 
@@ -82,16 +83,13 @@ void printYear(NSInteger year) {
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        
-        printYear(2016);
-        return 0;
     
-        NSCalendar* calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
-        NSDate* date = [NSDate date];
         NSInteger year = 0;
         NSInteger month = 0;
         
         if(argc == 1) {
+            NSCalendar* calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
+            NSDate* date = [NSDate date];
             year = [calendar component:NSCalendarUnitYear fromDate:date];
             month = [calendar component:NSCalendarUnitMonth fromDate:date];
             printMonth(month, year);
@@ -110,7 +108,7 @@ int main(int argc, const char * argv[]) {
             }
         }
         else {
-            NSLog(@"cal: too many args!");
+            printString(@"cal: too many args!");
         }
     }
     return 0;

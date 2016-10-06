@@ -47,8 +47,7 @@ enum {
 - (void)writeMonths
 {
     for(NSInteger month=1; month<=12; month++){
-        MYMonthView* monthView = [[MYMonthView alloc] initWithMonth:month andYear:_year];
-        monthView.standAlone = NO;
+        MYMonthView* monthView = [[MYMonthView alloc] initWithMonth:month andYear:_year andStandAlone:NO];
         NSInteger x = ((month-1)%3)*(monthView.viewBuffer.width+2);
         NSInteger y = 2 + (month-1)/3 * monthView.viewBuffer.height;
         [_viewBuffer copyFromViewBuffer:monthView.viewBuffer toX:x andY:y];

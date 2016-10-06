@@ -49,13 +49,13 @@
     return _weekdayNames;
 }
 
-- (instancetype)initWithMonth:(NSInteger)month andYear:(NSInteger)year
+- (instancetype)initWithMonth:(NSInteger)month andYear:(NSInteger)year andStandAlone:(Boolean)standAlone
 {
     self = [super init];
     if (self) {
         _month = month;
         _year = year;
-        _standAlone = YES;
+        _standAlone = standAlone;
         _viewBuffer = [[MYViewBuffer alloc] initWithWidth:MYMonthViewWidth andHeight:MYMonthViewHeight];
         
         [self writeTitleOfMonth];

@@ -23,6 +23,6 @@ enum {
 @property (strong) MYViewBuffer* viewBuffer;
 
 + (NSArray*) monthNames;
-- (instancetype)initWithMonth:(NSInteger)month andYear:(NSInteger)year;
+- (instancetype)initWithMonth:(NSInteger)month andYear:(NSInteger)year andStandAlone:(Boolean)standAlone;
 
 @end

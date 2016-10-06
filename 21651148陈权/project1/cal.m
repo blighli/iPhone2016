@@ -3,7 +3,7 @@
 #include <Foundation/Foundation.h>
 
 @implementation MonthFormatter
-// @synthesize  firstDayWeekDay,maxRangeOfMonth,monthIndator,yearIndator;
+ @synthesize  firstDayWeekDay,maxRangeOfMonth,monthIndator,yearIndator;
 + (MonthFormatter *)initByMonth:(int)m AndYear:(int)y {
   MonthFormatter *mf = [[MonthFormatter alloc] init];
 
@@ -88,6 +88,7 @@
 }
 
 // getter and setter
+/*
 - (void)setFirstDayWeekDay:(NSUInteger)firstDay {
   firstDayWeekDay = firstDay;
 }
@@ -112,10 +113,11 @@
 - (int)yearIndator {
   return yearIndator;
 }
-
+*/
 @end
 
 @implementation YearFormatter
+@synthesize yearIndator;
 + (YearFormatter *) initWithYear:(int)y{
     YearFormatter  * yf = [[YearFormatter alloc] init];
     [yf setYearIndator:y];
@@ -199,9 +201,11 @@
    NSLog(ms);
 }
  // getter and setter
+ /*
 - (void)setYearIndator:(int)yearInd {
   yearIndator = yearInd;
 }
+*/
 - (int)yearIndator {
   return yearIndator;
 }

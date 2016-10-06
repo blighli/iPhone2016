@@ -141,7 +141,7 @@
     NSString *mon4  = @"        十月               十一月              十二月        \n";
     NSString *wkstr = @"日 一 二 三 四 五 六   日 一 二 三 四 五 六   日 一 二 三 四 五 六\n";
 
-   NSMutableString *ms= [NSMutableString stringWithString:mon1];
+   NSMutableString *ms= mon1;
    [ms appendString:wkstr];
 
    int row;

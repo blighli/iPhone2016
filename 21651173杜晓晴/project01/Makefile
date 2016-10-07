@@ -1,5 +1,6 @@
-Calendar:main.m GetNow.m Judge.m Print.m Days.m clang -fno-objc-arc -framework foundation main.m GetNow.m Judge.m Print.m Days.m -o cal
+Cal:main.m GetNow.m Judge.m Print.m Days.m 
+	clang -fno-objc-arc -framework foundation main.m GetNow.m Judge.m Print.m Days.m -o cal
 run:
-    ./Cal
+	./Cal
 clean:
-    rm Cal
+	rm Cal

@@ -12,8 +12,8 @@
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         // 模拟参数调试
-        argc = 2;
-        argv[1] = "2016";
+//        argc = 2;
+//        argv[2] = "2016";
         
         NSTimeInterval secondsPerDay = 24 * 60 * 60;
         switch (argc) {

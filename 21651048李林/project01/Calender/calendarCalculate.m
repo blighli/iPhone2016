@@ -50,6 +50,7 @@
 
 + (void)allocCalendar:(NSString *)cal
 {
+//    NSLog(@"%@", cal);
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
     [formatter setDateFormat:@"yyyy-MM"];
     NSDate *date = [formatter dateFromString:cal];

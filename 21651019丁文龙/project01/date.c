@@ -144,7 +144,7 @@ void print_cal_three_month(int monthdays1, int monthdays2, int monthdays3, int f
 {
 	int i, j, k;
 
-	int week1 = firstWeek;
+	int week1 = firstWeek % 7; // 这里需要 %7 ,致命错误
 	int week2 = (monthdays1 % 7 + week1) % 7;  // 0 1 - 6,星期日记成0
 	int week3 = (monthdays2 % 7 + week2) % 7;
 

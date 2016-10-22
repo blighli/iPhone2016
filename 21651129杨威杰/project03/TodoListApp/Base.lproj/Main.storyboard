@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Cpq-2v-dbH">
+                                <rect key="frame" x="40" y="80" width="441" height="500"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3JE-FW-3GZ">
+                                <rect key="frame" x="40" y="20" width="327" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Qa-ph-4Xn">
+                                <rect key="frame" x="345" y="20" width="215" height="30"/>
+                                <state key="normal" title="Insert"/>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IZY-NX-Uyd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Cpq-2v-dbH" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="60" id="2Hl-8w-YlR"/>
+                            <constraint firstItem="Cpq-2v-dbH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="3My-XE-q8f"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Cpq-2v-dbH" secondAttribute="bottom" constant="20" id="G7M-gE-ksL"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Cpq-2v-dbH" secondAttribute="trailing" constant="99" id="Jw7-ca-9Qx"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="6Qa-ph-4Xn" secondAttribute="trailing" constant="20" id="RgK-Mo-cTw"/>
+                            <constraint firstItem="6Qa-ph-4Xn" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="Z8t-7I-Lfi"/>
+                            <constraint firstItem="3JE-FW-3GZ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="jxA-HQ-5dW"/>
+                            <constraint firstItem="Cpq-2v-dbH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kwC-8c-0Mf"/>
+                            <constraint firstItem="3JE-FW-3GZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="zIL-4x-MV2"/>
+                            <constraint firstItem="3JE-FW-3GZ" firstAttribute="trailing" secondItem="6Qa-ph-4Xn" secondAttribute="leading" id="zyN-kx-Jdv"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mUITableView" destination="Cpq-2v-dbH" id="jEF-6T-70b"/>
+                        <outlet property="mUITextField" destination="3JE-FW-3GZ" id="Q6Y-YS-MW2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="289"/>
+        </scene>
+    </scenes>
+</document>

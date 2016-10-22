@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "MyView.h"
 
 @interface AppDelegate ()
 
@@ -16,6 +17,17 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    self.window = [[UIWindow alloc] init];
+    _window.frame = [[UIScreen mainScreen] bounds];
+    _window.backgroundColor = [UIColor whiteColor];
+    [_window makeKeyAndVisible];
+    
+    _window.rootViewController = [[UIViewController alloc] init];
+    
+    NSInteger nMargin = 30;
+    
+    [_window.rootViewController.view addSubview: [[MyView alloc] initWithFrame:CGRectMake(nMargin, nMargin, _window.frame.size.width - nMargin, _window.frame.size.width)]];
+    
     // Override point for customization after application launch.
     return YES;
 }

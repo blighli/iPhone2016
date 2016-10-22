@@ -10,6 +10,13 @@
 		F43B8A311DA6753A00E73AFA /* MYViewBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = F43B8A301DA6753A00E73AFA /* MYViewBuffer.m */; };
 		F43B8A341DA6A22000E73AFA /* MYMonthView.m in Sources */ = {isa = PBXBuildFile; fileRef = F43B8A331DA6A22000E73AFA /* MYMonthView.m */; };
 		F43B8A371DA6A23D00E73AFA /* MYYearView.m in Sources */ = {isa = PBXBuildFile; fileRef = F43B8A361DA6A23D00E73AFA /* MYYearView.m */; };
+		F468A0701DAD6CBC00F07A73 /* libMyCal.h in Headers */ = {isa = PBXBuildFile; fileRef = F468A06E1DAD6CBC00F07A73 /* libMyCal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F468A0771DAD6CE100F07A73 /* MYViewBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = F43B8A301DA6753A00E73AFA /* MYViewBuffer.m */; };
+		F468A0781DAD6CE100F07A73 /* MYMonthView.m in Sources */ = {isa = PBXBuildFile; fileRef = F43B8A331DA6A22000E73AFA /* MYMonthView.m */; };
+		F468A0791DAD6CE100F07A73 /* MYYearView.m in Sources */ = {isa = PBXBuildFile; fileRef = F43B8A361DA6A23D00E73AFA /* MYYearView.m */; };
+		F468A07A1DAD6CFB00F07A73 /* MYViewBuffer.h in Headers */ = {isa = PBXBuildFile; fileRef = F43B8A2F1DA6753A00E73AFA /* MYViewBuffer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F468A07B1DAD6CFB00F07A73 /* MYMonthView.h in Headers */ = {isa = PBXBuildFile; fileRef = F43B8A321DA6A22000E73AFA /* MYMonthView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F468A07C1DAD6CFB00F07A73 /* MYYearView.h in Headers */ = {isa = PBXBuildFile; fileRef = F43B8A351DA6A23D00E73AFA /* MYYearView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F4AC33DD1DA443710067381F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F4AC33DC1DA443710067381F /* main.m */; };
 		F4AC33E41DA50B310067381F /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = F4AC33E31DA50B310067381F /* Makefile */; };
 /* End PBXBuildFile section */
@@ -33,6 +40,9 @@
 		F43B8A331DA6A22000E73AFA /* MYMonthView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYMonthView.m; sourceTree = "<group>"; };
 		F43B8A351DA6A23D00E73AFA /* MYYearView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYYearView.h; sourceTree = "<group>"; };
 		F43B8A361DA6A23D00E73AFA /* MYYearView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYYearView.m; sourceTree = "<group>"; };
+		F468A06C1DAD6CBC00F07A73 /* libMyCal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = libMyCal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F468A06E1DAD6CBC00F07A73 /* libMyCal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = libMyCal.h; sourceTree = "<group>"; };
+		F468A06F1DAD6CBC00F07A73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F4AC33D91DA443710067381F /* myCal */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = myCal; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4AC33DC1DA443710067381F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F4AC33E31DA50B310067381F /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
@@ -40,6 +50,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		F468A0681DAD6CBC00F07A73 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F4AC33D61DA443710067381F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -50,10 +67,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F468A06D1DAD6CBC00F07A73 /* libMyCal */ = {
+			isa = PBXGroup;
+			children = (
+				F468A06E1DAD6CBC00F07A73 /* libMyCal.h */,
+				F468A06F1DAD6CBC00F07A73 /* Info.plist */,
+			);
+			path = libMyCal;
+			sourceTree = "<group>";
+		};
 		F4AC33D01DA443710067381F = {
 			isa = PBXGroup;
 			children = (
 				F4AC33DB1DA443710067381F /* myCal */,
+				F468A06D1DAD6CBC00F07A73 /* libMyCal */,
 				F4AC33DA1DA443710067381F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -62,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				F4AC33D91DA443710067381F /* myCal */,
+				F468A06C1DAD6CBC00F07A73 /* libMyCal.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -84,7 +112,39 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		F468A0691DAD6CBC00F07A73 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F468A0701DAD6CBC00F07A73 /* libMyCal.h in Headers */,
+				F468A07A1DAD6CFB00F07A73 /* MYViewBuffer.h in Headers */,
+				F468A07B1DAD6CFB00F07A73 /* MYMonthView.h in Headers */,
+				F468A07C1DAD6CFB00F07A73 /* MYYearView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		F468A06B1DAD6CBC00F07A73 /* libMyCal */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F468A0711DAD6CBC00F07A73 /* Build configuration list for PBXNativeTarget "libMyCal" */;
+			buildPhases = (
+				F468A0671DAD6CBC00F07A73 /* Sources */,
+				F468A0681DAD6CBC00F07A73 /* Frameworks */,
+				F468A0691DAD6CBC00F07A73 /* Headers */,
+				F468A06A1DAD6CBC00F07A73 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = libMyCal;
+			productName = libMyCal;
+			productReference = F468A06C1DAD6CBC00F07A73 /* libMyCal.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		F4AC33D81DA443710067381F /* myCal */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F4AC33E01DA443710067381F /* Build configuration list for PBXNativeTarget "myCal" */;
@@ -111,6 +171,11 @@
 				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = liqilei;
 				TargetAttributes = {
+					F468A06B1DAD6CBC00F07A73 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = MLD828QZD4;
+						ProvisioningStyle = Automatic;
+					};
 					F4AC33D81DA443710067381F = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = MLD828QZD4;
@@ -131,11 +196,32 @@
 			projectRoot = "";
 			targets = (
 				F4AC33D81DA443710067381F /* myCal */,
+				F468A06B1DAD6CBC00F07A73 /* libMyCal */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		F468A06A1DAD6CBC00F07A73 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		F468A0671DAD6CBC00F07A73 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F468A0771DAD6CE100F07A73 /* MYViewBuffer.m in Sources */,
+				F468A0781DAD6CE100F07A73 /* MYMonthView.m in Sources */,
+				F468A0791DAD6CE100F07A73 /* MYYearView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F4AC33D51DA443710067381F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -151,6 +237,57 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		F468A0721DAD6CBC00F07A73 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = MLD828QZD4;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = libMyCal/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.liqilei.libMyCal;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F468A0731DAD6CBC00F07A73 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = MLD828QZD4;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = libMyCal/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.liqilei.libMyCal;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		F4AC33DE1DA443710067381F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -257,6 +394,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		F468A0711DAD6CBC00F07A73 /* Build configuration list for PBXNativeTarget "libMyCal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F468A0721DAD6CBC00F07A73 /* Debug */,
+				F468A0731DAD6CBC00F07A73 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		F4AC33D41DA443710067381F /* Build configuration list for PBXProject "myCal" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

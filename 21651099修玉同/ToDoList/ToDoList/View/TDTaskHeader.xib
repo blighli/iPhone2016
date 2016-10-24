@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11521.1" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11517.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="TDTaskHeader">
+            <rect key="frame" x="0.0" y="0.0" width="334" height="94"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wXj-Xp-GjN">
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XOB-wU-Ray">
+                    <color key="backgroundColor" red="0.41219584430403144" green="0.74290814490495116" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="Pdl-9C-S5Q"/>
+                    </constraints>
+                    <state key="normal" title="添加">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="addBtnClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="upz-bY-7jl"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="wXj-Xp-GjN" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="2sf-lp-vVI"/>
+                <constraint firstItem="XOB-wU-Ray" firstAttribute="leading" secondItem="wXj-Xp-GjN" secondAttribute="trailing" constant="16" id="FEl-ES-jI8"/>
+                <constraint firstItem="wXj-Xp-GjN" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="H8v-I1-J5T"/>
+                <constraint firstItem="XOB-wU-Ray" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Tsq-cA-bee"/>
+                <constraint firstAttribute="trailing" secondItem="XOB-wU-Ray" secondAttribute="trailing" constant="16" id="yP3-mM-tmK"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="inputField" destination="wXj-Xp-GjN" id="mGc-Ze-Inc"/>
+            </connections>
+            <point key="canvasLocation" x="14" y="-149"/>
+        </view>
+    </objects>
+</document>

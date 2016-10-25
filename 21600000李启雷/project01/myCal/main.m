@@ -72,12 +72,16 @@ NSInteger monthFromString(const char* str) {
 
 void printMonth(NSInteger month, NSInteger year) {
     MYMonthView* view = [[MYMonthView alloc] initWithMonth:month andYear:year andStandAlone:YES];
-    [view.viewBuffer display];
+    [view.viewBuffer display: ^(NSString* str,int row){
+        printString(str);
+    }];
 }
 
 void printYear(NSInteger year) {
     MYYearView* view = [[MYYearView alloc] initWithYear:year];
-    [view.viewBuffer display];
+    [view.viewBuffer display: ^(NSString* str,int row){
+        printString(str);
+    }];
 }
 
 

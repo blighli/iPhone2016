@@ -36,4 +36,16 @@
      _msgLabel.text = @"Bye";
 }
 
+- (IBAction)dateChanged:(id)sender {
+    UIDatePicker* dp = (UIDatePicker*)sender;
+    NSDate* date = [dp date];
+    NSCalendar* cal = [NSCalendar currentCalendar];
+    NSInteger year = [cal component:NSCalendarUnitYear fromDate:date];
+    NSInteger month = [cal component:NSCalendarUnitMonth fromDate:date];
+    NSInteger day = [cal component:NSCalendarUnitDay fromDate:date];
+    
+    NSString* str = [[NSString alloc] initWithFormat:@"%ld-%ld-%ld",year,month, (long)day];
+    _msgLabel.text = str;
+}
+
 @end

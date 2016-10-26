@@ -1,0 +1,542 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		88E8322E1DC04163006A5D51 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 88E8322D1DC04163006A5D51 /* main.m */; };
+		88E832311DC04163006A5D51 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 88E832301DC04163006A5D51 /* AppDelegate.m */; };
+		88E832341DC04163006A5D51 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88E832331DC04163006A5D51 /* ViewController.m */; };
+		88E832371DC04163006A5D51 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88E832351DC04163006A5D51 /* Main.storyboard */; };
+		88E832391DC04163006A5D51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88E832381DC04163006A5D51 /* Assets.xcassets */; };
+		88E8323C1DC04163006A5D51 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88E8323A1DC04163006A5D51 /* LaunchScreen.storyboard */; };
+		88E832471DC04164006A5D51 /* MyCalPaintTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 88E832461DC04164006A5D51 /* MyCalPaintTests.m */; };
+		88E832521DC04164006A5D51 /* MyCalPaintUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 88E832511DC04164006A5D51 /* MyCalPaintUITests.m */; };
+		88E832611DC042FF006A5D51 /* SLCal.m in Sources */ = {isa = PBXBuildFile; fileRef = 88E832601DC042FF006A5D51 /* SLCal.m */; };
+		88E832641DC043E2006A5D51 /* MyCalView.m in Sources */ = {isa = PBXBuildFile; fileRef = 88E832631DC043E2006A5D51 /* MyCalView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		88E832431DC04164006A5D51 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 88E832211DC04163006A5D51 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 88E832281DC04163006A5D51;
+			remoteInfo = MyCalPaint;
+		};
+		88E8324E1DC04164006A5D51 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 88E832211DC04163006A5D51 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 88E832281DC04163006A5D51;
+			remoteInfo = MyCalPaint;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		88E832291DC04163006A5D51 /* MyCalPaint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyCalPaint.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		88E8322D1DC04163006A5D51 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		88E8322F1DC04163006A5D51 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		88E832301DC04163006A5D51 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		88E832321DC04163006A5D51 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		88E832331DC04163006A5D51 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		88E832361DC04163006A5D51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		88E832381DC04163006A5D51 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		88E8323B1DC04163006A5D51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		88E8323D1DC04163006A5D51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88E832421DC04164006A5D51 /* MyCalPaintTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyCalPaintTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		88E832461DC04164006A5D51 /* MyCalPaintTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyCalPaintTests.m; sourceTree = "<group>"; };
+		88E832481DC04164006A5D51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88E8324D1DC04164006A5D51 /* MyCalPaintUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyCalPaintUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		88E832511DC04164006A5D51 /* MyCalPaintUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyCalPaintUITests.m; sourceTree = "<group>"; };
+		88E832531DC04164006A5D51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88E8325F1DC042FF006A5D51 /* SLCal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLCal.h; sourceTree = "<group>"; };
+		88E832601DC042FF006A5D51 /* SLCal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLCal.m; sourceTree = "<group>"; };
+		88E832621DC043E2006A5D51 /* MyCalView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCalView.h; sourceTree = "<group>"; };
+		88E832631DC043E2006A5D51 /* MyCalView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCalView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		88E832261DC04163006A5D51 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88E8323F1DC04164006A5D51 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88E8324A1DC04164006A5D51 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		88E832201DC04163006A5D51 = {
+			isa = PBXGroup;
+			children = (
+				88E8322B1DC04163006A5D51 /* MyCalPaint */,
+				88E832451DC04164006A5D51 /* MyCalPaintTests */,
+				88E832501DC04164006A5D51 /* MyCalPaintUITests */,
+				88E8322A1DC04163006A5D51 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		88E8322A1DC04163006A5D51 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				88E832291DC04163006A5D51 /* MyCalPaint.app */,
+				88E832421DC04164006A5D51 /* MyCalPaintTests.xctest */,
+				88E8324D1DC04164006A5D51 /* MyCalPaintUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		88E8322B1DC04163006A5D51 /* MyCalPaint */ = {
+			isa = PBXGroup;
+			children = (
+				88E8322F1DC04163006A5D51 /* AppDelegate.h */,
+				88E832301DC04163006A5D51 /* AppDelegate.m */,
+				88E832321DC04163006A5D51 /* ViewController.h */,
+				88E832331DC04163006A5D51 /* ViewController.m */,
+				88E832351DC04163006A5D51 /* Main.storyboard */,
+				88E832381DC04163006A5D51 /* Assets.xcassets */,
+				88E8323A1DC04163006A5D51 /* LaunchScreen.storyboard */,
+				88E8323D1DC04163006A5D51 /* Info.plist */,
+				88E8325F1DC042FF006A5D51 /* SLCal.h */,
+				88E832601DC042FF006A5D51 /* SLCal.m */,
+				88E832621DC043E2006A5D51 /* MyCalView.h */,
+				88E832631DC043E2006A5D51 /* MyCalView.m */,
+				88E8322C1DC04163006A5D51 /* Supporting Files */,
+			);
+			path = MyCalPaint;
+			sourceTree = "<group>";
+		};
+		88E8322C1DC04163006A5D51 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				88E8322D1DC04163006A5D51 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		88E832451DC04164006A5D51 /* MyCalPaintTests */ = {
+			isa = PBXGroup;
+			children = (
+				88E832461DC04164006A5D51 /* MyCalPaintTests.m */,
+				88E832481DC04164006A5D51 /* Info.plist */,
+			);
+			path = MyCalPaintTests;
+			sourceTree = "<group>";
+		};
+		88E832501DC04164006A5D51 /* MyCalPaintUITests */ = {
+			isa = PBXGroup;
+			children = (
+				88E832511DC04164006A5D51 /* MyCalPaintUITests.m */,
+				88E832531DC04164006A5D51 /* Info.plist */,
+			);
+			path = MyCalPaintUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		88E832281DC04163006A5D51 /* MyCalPaint */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 88E832561DC04164006A5D51 /* Build configuration list for PBXNativeTarget "MyCalPaint" */;
+			buildPhases = (
+				88E832251DC04163006A5D51 /* Sources */,
+				88E832261DC04163006A5D51 /* Frameworks */,
+				88E832271DC04163006A5D51 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyCalPaint;
+			productName = MyCalPaint;
+			productReference = 88E832291DC04163006A5D51 /* MyCalPaint.app */;
+			productType = "com.apple.product-type.application";
+		};
+		88E832411DC04164006A5D51 /* MyCalPaintTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 88E832591DC04164006A5D51 /* Build configuration list for PBXNativeTarget "MyCalPaintTests" */;
+			buildPhases = (
+				88E8323E1DC04164006A5D51 /* Sources */,
+				88E8323F1DC04164006A5D51 /* Frameworks */,
+				88E832401DC04164006A5D51 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				88E832441DC04164006A5D51 /* PBXTargetDependency */,
+			);
+			name = MyCalPaintTests;
+			productName = MyCalPaintTests;
+			productReference = 88E832421DC04164006A5D51 /* MyCalPaintTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		88E8324C1DC04164006A5D51 /* MyCalPaintUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 88E8325C1DC04164006A5D51 /* Build configuration list for PBXNativeTarget "MyCalPaintUITests" */;
+			buildPhases = (
+				88E832491DC04164006A5D51 /* Sources */,
+				88E8324A1DC04164006A5D51 /* Frameworks */,
+				88E8324B1DC04164006A5D51 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				88E8324F1DC04164006A5D51 /* PBXTargetDependency */,
+			);
+			name = MyCalPaintUITests;
+			productName = MyCalPaintUITests;
+			productReference = 88E8324D1DC04164006A5D51 /* MyCalPaintUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		88E832211DC04163006A5D51 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = SuperleeOS;
+				TargetAttributes = {
+					88E832281DC04163006A5D51 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+					88E832411DC04164006A5D51 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 88E832281DC04163006A5D51;
+					};
+					88E8324C1DC04164006A5D51 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 88E832281DC04163006A5D51;
+					};
+				};
+			};
+			buildConfigurationList = 88E832241DC04163006A5D51 /* Build configuration list for PBXProject "MyCalPaint" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 88E832201DC04163006A5D51;
+			productRefGroup = 88E8322A1DC04163006A5D51 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				88E832281DC04163006A5D51 /* MyCalPaint */,
+				88E832411DC04164006A5D51 /* MyCalPaintTests */,
+				88E8324C1DC04164006A5D51 /* MyCalPaintUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		88E832271DC04163006A5D51 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88E8323C1DC04163006A5D51 /* LaunchScreen.storyboard in Resources */,
+				88E832391DC04163006A5D51 /* Assets.xcassets in Resources */,
+				88E832371DC04163006A5D51 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88E832401DC04164006A5D51 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88E8324B1DC04164006A5D51 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		88E832251DC04163006A5D51 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88E832341DC04163006A5D51 /* ViewController.m in Sources */,
+				88E832611DC042FF006A5D51 /* SLCal.m in Sources */,
+				88E832311DC04163006A5D51 /* AppDelegate.m in Sources */,
+				88E832641DC043E2006A5D51 /* MyCalView.m in Sources */,
+				88E8322E1DC04163006A5D51 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88E8323E1DC04164006A5D51 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88E832471DC04164006A5D51 /* MyCalPaintTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88E832491DC04164006A5D51 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88E832521DC04164006A5D51 /* MyCalPaintUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		88E832441DC04164006A5D51 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 88E832281DC04163006A5D51 /* MyCalPaint */;
+			targetProxy = 88E832431DC04164006A5D51 /* PBXContainerItemProxy */;
+		};
+		88E8324F1DC04164006A5D51 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 88E832281DC04163006A5D51 /* MyCalPaint */;
+			targetProxy = 88E8324E1DC04164006A5D51 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		88E832351DC04163006A5D51 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				88E832361DC04163006A5D51 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		88E8323A1DC04163006A5D51 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				88E8323B1DC04163006A5D51 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		88E832541DC04164006A5D51 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		88E832551DC04164006A5D51 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		88E832571DC04164006A5D51 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MyCalPaint/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.MyCalPaint;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		88E832581DC04164006A5D51 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MyCalPaint/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.MyCalPaint;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		88E8325A1DC04164006A5D51 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MyCalPaintTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.MyCalPaintTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyCalPaint.app/MyCalPaint";
+			};
+			name = Debug;
+		};
+		88E8325B1DC04164006A5D51 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MyCalPaintTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.MyCalPaintTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyCalPaint.app/MyCalPaint";
+			};
+			name = Release;
+		};
+		88E8325D1DC04164006A5D51 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MyCalPaintUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.MyCalPaintUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = MyCalPaint;
+			};
+			name = Debug;
+		};
+		88E8325E1DC04164006A5D51 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MyCalPaintUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.MyCalPaintUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = MyCalPaint;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		88E832241DC04163006A5D51 /* Build configuration list for PBXProject "MyCalPaint" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88E832541DC04164006A5D51 /* Debug */,
+				88E832551DC04164006A5D51 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		88E832561DC04164006A5D51 /* Build configuration list for PBXNativeTarget "MyCalPaint" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88E832571DC04164006A5D51 /* Debug */,
+				88E832581DC04164006A5D51 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		88E832591DC04164006A5D51 /* Build configuration list for PBXNativeTarget "MyCalPaintTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88E8325A1DC04164006A5D51 /* Debug */,
+				88E8325B1DC04164006A5D51 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		88E8325C1DC04164006A5D51 /* Build configuration list for PBXNativeTarget "MyCalPaintUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88E8325D1DC04164006A5D51 /* Debug */,
+				88E8325E1DC04164006A5D51 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 88E832211DC04163006A5D51 /* Project object */;
+}

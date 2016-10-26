@@ -26,8 +26,6 @@
     
     _yearNow = (int)[d year];
     _monthNow = (int)[d month];
-    //  NSLog(@"%d",_yearNow);
-    //  NSLog(@"%d",_monthNow);
 }
 
 @end

@@ -1,0 +1,324 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		68884DA31DB4CFDC00BFA355 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 68884DA21DB4CFDC00BFA355 /* main.m */; };
+		68884DA61DB4CFDC00BFA355 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 68884DA51DB4CFDC00BFA355 /* AppDelegate.m */; };
+		68884DAE1DB4CFDC00BFA355 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68884DAD1DB4CFDC00BFA355 /* Assets.xcassets */; };
+		68884DB11DB4CFDC00BFA355 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68884DAF1DB4CFDC00BFA355 /* LaunchScreen.storyboard */; };
+		68884DBA1DB4D00100BFA355 /* JYCal.m in Sources */ = {isa = PBXBuildFile; fileRef = 68884DB91DB4D00100BFA355 /* JYCal.m */; };
+		68884DBD1DB4D03D00BFA355 /* JYCalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68884DBC1DB4D03D00BFA355 /* JYCalViewController.m */; };
+		68884DC01DB4D0AC00BFA355 /* JYCalView.m in Sources */ = {isa = PBXBuildFile; fileRef = 68884DBF1DB4D0AC00BFA355 /* JYCalView.m */; };
+		68884DC21DB4DAE000BFA355 /* MONACO.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 68884DC11DB4DAE000BFA355 /* MONACO.TTF */; };
+		68884DC41DB4E15300BFA355 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68884DC31DB4E15300BFA355 /* Main.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		68884D9E1DB4CFDC00BFA355 /* Cal2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cal2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		68884DA21DB4CFDC00BFA355 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		68884DA41DB4CFDC00BFA355 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		68884DA51DB4CFDC00BFA355 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		68884DAD1DB4CFDC00BFA355 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		68884DB01DB4CFDC00BFA355 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		68884DB21DB4CFDC00BFA355 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		68884DB81DB4D00100BFA355 /* JYCal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYCal.h; sourceTree = "<group>"; };
+		68884DB91DB4D00100BFA355 /* JYCal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYCal.m; sourceTree = "<group>"; };
+		68884DBB1DB4D03D00BFA355 /* JYCalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYCalViewController.h; sourceTree = "<group>"; };
+		68884DBC1DB4D03D00BFA355 /* JYCalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYCalViewController.m; sourceTree = "<group>"; };
+		68884DBE1DB4D0AC00BFA355 /* JYCalView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYCalView.h; sourceTree = "<group>"; };
+		68884DBF1DB4D0AC00BFA355 /* JYCalView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYCalView.m; sourceTree = "<group>"; };
+		68884DC11DB4DAE000BFA355 /* MONACO.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = MONACO.TTF; sourceTree = "<group>"; };
+		68884DC31DB4E15300BFA355 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		68884D9B1DB4CFDC00BFA355 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		68884D951DB4CFDC00BFA355 = {
+			isa = PBXGroup;
+			children = (
+				68884DA01DB4CFDC00BFA355 /* Cal2 */,
+				68884D9F1DB4CFDC00BFA355 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		68884D9F1DB4CFDC00BFA355 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				68884D9E1DB4CFDC00BFA355 /* Cal2.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		68884DA01DB4CFDC00BFA355 /* Cal2 */ = {
+			isa = PBXGroup;
+			children = (
+				68884DB81DB4D00100BFA355 /* JYCal.h */,
+				68884DB91DB4D00100BFA355 /* JYCal.m */,
+				68884DBE1DB4D0AC00BFA355 /* JYCalView.h */,
+				68884DBF1DB4D0AC00BFA355 /* JYCalView.m */,
+				68884DBB1DB4D03D00BFA355 /* JYCalViewController.h */,
+				68884DBC1DB4D03D00BFA355 /* JYCalViewController.m */,
+				68884DC31DB4E15300BFA355 /* Main.storyboard */,
+				68884DA41DB4CFDC00BFA355 /* AppDelegate.h */,
+				68884DA51DB4CFDC00BFA355 /* AppDelegate.m */,
+				68884DAD1DB4CFDC00BFA355 /* Assets.xcassets */,
+				68884DAF1DB4CFDC00BFA355 /* LaunchScreen.storyboard */,
+				68884DB21DB4CFDC00BFA355 /* Info.plist */,
+				68884DA11DB4CFDC00BFA355 /* Supporting Files */,
+			);
+			path = Cal2;
+			sourceTree = "<group>";
+		};
+		68884DA11DB4CFDC00BFA355 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				68884DC11DB4DAE000BFA355 /* MONACO.TTF */,
+				68884DA21DB4CFDC00BFA355 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		68884D9D1DB4CFDC00BFA355 /* Cal2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 68884DB51DB4CFDC00BFA355 /* Build configuration list for PBXNativeTarget "Cal2" */;
+			buildPhases = (
+				68884D9A1DB4CFDC00BFA355 /* Sources */,
+				68884D9B1DB4CFDC00BFA355 /* Frameworks */,
+				68884D9C1DB4CFDC00BFA355 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Cal2;
+			productName = Cal2;
+			productReference = 68884D9E1DB4CFDC00BFA355 /* Cal2.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		68884D961DB4CFDC00BFA355 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = jyoung;
+				TargetAttributes = {
+					68884D9D1DB4CFDC00BFA355 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 68884D991DB4CFDC00BFA355 /* Build configuration list for PBXProject "Cal2" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 68884D951DB4CFDC00BFA355;
+			productRefGroup = 68884D9F1DB4CFDC00BFA355 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				68884D9D1DB4CFDC00BFA355 /* Cal2 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		68884D9C1DB4CFDC00BFA355 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68884DB11DB4CFDC00BFA355 /* LaunchScreen.storyboard in Resources */,
+				68884DAE1DB4CFDC00BFA355 /* Assets.xcassets in Resources */,
+				68884DC21DB4DAE000BFA355 /* MONACO.TTF in Resources */,
+				68884DC41DB4E15300BFA355 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		68884D9A1DB4CFDC00BFA355 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68884DBA1DB4D00100BFA355 /* JYCal.m in Sources */,
+				68884DC01DB4D0AC00BFA355 /* JYCalView.m in Sources */,
+				68884DA61DB4CFDC00BFA355 /* AppDelegate.m in Sources */,
+				68884DBD1DB4D03D00BFA355 /* JYCalViewController.m in Sources */,
+				68884DA31DB4CFDC00BFA355 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		68884DAF1DB4CFDC00BFA355 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				68884DB01DB4CFDC00BFA355 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		68884DB31DB4CFDC00BFA355 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		68884DB41DB4CFDC00BFA355 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		68884DB61DB4CFDC00BFA355 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Cal2/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jyoung.Cal2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		68884DB71DB4CFDC00BFA355 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Cal2/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jyoung.Cal2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		68884D991DB4CFDC00BFA355 /* Build configuration list for PBXProject "Cal2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68884DB31DB4CFDC00BFA355 /* Debug */,
+				68884DB41DB4CFDC00BFA355 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		68884DB51DB4CFDC00BFA355 /* Build configuration list for PBXNativeTarget "Cal2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68884DB61DB4CFDC00BFA355 /* Debug */,
+				68884DB71DB4CFDC00BFA355 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 68884D961DB4CFDC00BFA355 /* Project object */;
+}

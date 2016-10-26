@@ -18,7 +18,13 @@
 @end
 
 @implementation LJHtaskViewController
-
+#pragma mark - lazy
+- (NSArray *)taskArray{
+    if (_taskArray == nil) {
+        _taskArray = [NSArray array];
+    }
+    return _taskArray;
+}
 #pragma mark - buttonEvent
 - (IBAction)addTask:(id)sender {
     //把任务添加到数组中，并且刷新tableView
@@ -96,7 +102,7 @@
     NSArray *path = NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES);
     //获取完整路径
     NSString *cachesPath = [path objectAtIndex:0];
-    NSString *tasksPlistPath = [cachesPath stringByAppendingPathExtension:@"tasks.plist"];
+    NSString *tasksPlistPath = [cachesPath stringByAppendingPathComponent:@"tasks.plist"];
     return tasksPlistPath;
 }
 

@@ -13,6 +13,7 @@
 		484A5E8C1DB89CEC00F65EAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 484A5E8B1DB89CEC00F65EAA /* Assets.xcassets */; };
 		484A5E8F1DB89CEC00F65EAA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 484A5E8D1DB89CEC00F65EAA /* LaunchScreen.storyboard */; };
 		48E4E7F91DB9DE460084A32F /* LJHtaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E4E7F81DB9DE460084A32F /* LJHtaskViewController.m */; };
+		48E9B8A41DBE39C30055783C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48E9B8A31DBE39C30055783C /* QuartzCore.framework */; };
 		48EE43E11DB8BCFB005628F1 /* LJHtaskTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 48EE43DF1DB8BCFB005628F1 /* LJHtaskTableViewCell.m */; };
 		48EE43E21DB8BCFB005628F1 /* LJHtaskTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48EE43E01DB8BCFB005628F1 /* LJHtaskTableViewCell.xib */; };
 /* End PBXBuildFile section */
@@ -28,6 +29,7 @@
 		484A5E901DB89CEC00F65EAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		48E4E7F71DB9DE460084A32F /* LJHtaskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJHtaskViewController.h; sourceTree = "<group>"; };
 		48E4E7F81DB9DE460084A32F /* LJHtaskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJHtaskViewController.m; sourceTree = "<group>"; };
+		48E9B8A31DBE39C30055783C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		48EE43DE1DB8BCFB005628F1 /* LJHtaskTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJHtaskTableViewCell.h; sourceTree = "<group>"; };
 		48EE43DF1DB8BCFB005628F1 /* LJHtaskTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJHtaskTableViewCell.m; sourceTree = "<group>"; };
 		48EE43E01DB8BCFB005628F1 /* LJHtaskTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LJHtaskTableViewCell.xib; sourceTree = "<group>"; };
@@ -38,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48E9B8A41DBE39C30055783C /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -49,6 +52,7 @@
 			children = (
 				484A5E7E1DB89CEC00F65EAA /* taskList */,
 				484A5E7D1DB89CEC00F65EAA /* Products */,
+				48E9B89C1DBE38350055783C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -85,6 +89,14 @@
 				484A5E801DB89CEC00F65EAA /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		48E9B89C1DBE38350055783C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				48E9B8A31DBE39C30055783C /* QuartzCore.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,7 +241,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -271,7 +283,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -285,7 +297,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = R9YBSZ4EG3;
 				INFOPLIST_FILE = taskList/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "-37990443-qq.com.taskList";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -297,7 +311,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = R9YBSZ4EG3;
 				INFOPLIST_FILE = taskList/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "-37990443-qq.com.taskList";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

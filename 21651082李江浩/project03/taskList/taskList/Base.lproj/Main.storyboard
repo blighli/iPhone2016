@@ -34,41 +34,40 @@
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JPy-gC-L5l">
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="63" id="QYG-TR-deB"/>
+                                    <constraint firstAttribute="height" constant="33" id="HI2-Q3-7ij"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <state key="normal" title="添加"/>
+                                <state key="normal" title="添加任务"/>
                                 <connections>
                                     <action selector="addTask:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aW7-J0-mFs"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="任务清单" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Ig-Lg-CWp">
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="78" id="cIi-HR-PQf"/>
-                                </constraints>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="已有任务" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Ig-Lg-CWp">
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cqe-7V-AZe">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="sectionIndexColor" red="0.3361681809" green="1" blue="0.40706226210000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="sectionIndexBackgroundColor" red="1" green="0.26321568161141762" blue="0.30952683462905883" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.91954657773651305" green="1" blue="0.92913137820345293" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="JPy-gC-L5l" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="140" id="1kX-Wb-2Ig"/>
-                            <constraint firstItem="7Ig-Lg-CWp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="132" id="23g-Zn-wYO"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="JPy-gC-L5l" secondAttribute="trailing" constant="140" id="AfX-Di-FNb"/>
                             <constraint firstItem="8KA-hb-oUA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="19.5" id="Cds-FO-f91"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="cqe-7V-AZe" secondAttribute="bottom" constant="102" id="DZF-lT-Hd5"/>
                             <constraint firstItem="cqe-7V-AZe" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="E49-nV-VMZ"/>
+                            <constraint firstItem="7Ig-Lg-CWp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="100" id="Gev-bq-ClB"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="7Ig-Lg-CWp" secondAttribute="trailing" constant="100" id="GoC-Xd-BA4"/>
                             <constraint firstItem="8KA-hb-oUA" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="46" id="Hsk-CW-8gZ"/>
                             <constraint firstItem="cqe-7V-AZe" firstAttribute="top" secondItem="7Ig-Lg-CWp" secondAttribute="bottom" constant="8" id="Nis-z8-P60"/>
                             <constraint firstItem="JPy-gC-L5l" firstAttribute="top" secondItem="H3Y-ob-as8" secondAttribute="bottom" constant="37" id="Y5p-0z-kiX"/>
                             <constraint firstItem="H3Y-ob-as8" firstAttribute="leading" secondItem="8KA-hb-oUA" secondAttribute="trailing" constant="17" id="e32-es-N35"/>
+                            <constraint firstItem="JPy-gC-L5l" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="100" id="ign-70-PvO"/>
                             <constraint firstItem="cqe-7V-AZe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="j5y-AL-vbC"/>
                             <constraint firstItem="H3Y-ob-as8" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="41" id="kID-5I-OXC"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="7Ig-Lg-CWp" secondAttribute="trailing" constant="133" id="xoZ-k1-yAC"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="JPy-gC-L5l" secondAttribute="trailing" constant="100" id="rhM-eH-8OY"/>
                             <constraint firstItem="7Ig-Lg-CWp" firstAttribute="top" secondItem="JPy-gC-L5l" secondAttribute="bottom" constant="20" id="zUB-X5-vX3"/>
                         </constraints>
                     </view>
@@ -79,7 +78,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-759" y="-77"/>
+            <point key="canvasLocation" x="-838" y="-72"/>
         </scene>
     </scenes>
 </document>

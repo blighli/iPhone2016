@@ -1,3 +1,29 @@
+##第二次作业 移植cal到ios平台
+
+####基本功能
+    可实现选择月份和年份，不过为了简单考虑，只是用datepicker来作为用户的选择的工具
+
+####学习到的知识
+* NSString、NSMutableString的进一步认识
+* Framework的制作与使用
+
+
+##第三次作业 实现Todo List
+
+####基本功能
+
+* 添加task
+* 数据保存到本地，用plist
+* 长按某个task，可以删除该task 
+
+####学习到的知识
+* UITableView、UITableViewCell的知识
+* 对视图层次有更进一步的认识
+* 对如何在代码中实现界面有了一定的体会
+* 对ios中的事件机制有了进一步的了解
+* 对Category的认识
+
+
 ##第一次作业 简单实现macOS下的cal
 
 ####三种基本的功能

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="TableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yv5-6I-C3C">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="209" id="AG7-Rj-Cy1"/>
+                        <constraint firstAttribute="height" constant="21" id="r5K-By-8zr"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I2L-mv-Ays">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="IYy-cX-XNw"/>
+                        <constraint firstAttribute="width" constant="46" id="vNS-fg-NtV"/>
+                    </constraints>
+                    <state key="normal" title="删除"/>
+                    <connections>
+                        <action selector="taskFinished:" destination="iN0-l3-epB" eventType="touchUpInside" id="Is4-ox-I6I"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="yv5-6I-C3C" secondAttribute="bottom" constant="11" id="3yb-34-MJL"/>
+                <constraint firstItem="I2L-mv-Ays" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="8dH-ri-Y6S"/>
+                <constraint firstItem="yv5-6I-C3C" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Ehn-5J-XDt"/>
+                <constraint firstAttribute="bottom" secondItem="I2L-mv-Ays" secondAttribute="bottom" constant="6" id="LYh-Oj-WiD"/>
+                <constraint firstAttribute="trailing" secondItem="I2L-mv-Ays" secondAttribute="trailing" id="LsE-Em-ZJO"/>
+                <constraint firstItem="yv5-6I-C3C" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="12" id="u6f-Kz-BAT"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="taskLabel" destination="yv5-6I-C3C" id="3tb-8n-kv7"/>
+            </connections>
+            <point key="canvasLocation" x="-26" y="-200"/>
+        </view>
+    </objects>
+</document>

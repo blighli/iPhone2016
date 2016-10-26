@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" autoresizesSubviews="NO" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="4zK-Uu-8Ke">
+                                <rect key="frame" x="0.0" y="19" width="600" height="216"/>
+                                <date key="date" timeIntervalSinceReferenceDate="499094474.15417099">
+                                    <!--2016-10-25 13:21:14 +0000-->
+                                </date>
+                                <connections>
+                                    <action selector="dateChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="Cl7-Rm-Sbm"/>
+                                </connections>
+                            </datePicker>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1fx-8i-TI8">
+                                <rect key="frame" x="132" y="273" width="336" height="211"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="336" id="4YN-w7-3eE"/>
+                                </constraints>
+                                <attributedString key="attributedText"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="4zK-Uu-8Ke" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-173" id="0ou-An-Qr8"/>
+                            <constraint firstItem="1fx-8i-TI8" firstAttribute="centerX" secondItem="4zK-Uu-8Ke" secondAttribute="centerX" id="7Uh-8i-3Qz"/>
+                            <constraint firstItem="4zK-Uu-8Ke" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="KML-0o-mh4"/>
+                            <constraint firstItem="4zK-Uu-8Ke" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XXO-f7-7wE"/>
+                            <constraint firstItem="1fx-8i-TI8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aF7-9o-W86"/>
+                            <constraint firstItem="1fx-8i-TI8" firstAttribute="top" secondItem="4zK-Uu-8Ke" secondAttribute="bottom" constant="38" id="bjg-4H-5Kv"/>
+                            <constraint firstItem="1fx-8i-TI8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="clR-cK-eWS"/>
+                            <constraint firstItem="1fx-8i-TI8" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="78.5" id="n9r-wR-2hE"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="viewCal" destination="1fx-8i-TI8" id="u3n-cX-99t"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="380" y="317"/>
+        </scene>
+    </scenes>
+</document>

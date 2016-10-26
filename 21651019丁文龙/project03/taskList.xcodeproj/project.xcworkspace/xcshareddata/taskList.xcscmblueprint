@@ -1,0 +1,29 @@
+{
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "1C3B4AD523830C2151A6CF7C4637220B09A9D1EE" : 9223372036854775807,
+    "9E1ECC80773D1F4F22D03CB4DEA298B3CB57FAF5" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "AE4DF540-80C1-4605-88AA-5DA6294BE1A0",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "1C3B4AD523830C2151A6CF7C4637220B09A9D1EE" : "..\/..",
+    "9E1ECC80773D1F4F22D03CB4DEA298B3CB57FAF5" : "..\/..\/..\/..\/Documents\/SVProgressHUD"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "taskList",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "taskList.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/SweetLjh\/iPhone2016.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "1C3B4AD523830C2151A6CF7C4637220B09A9D1EE"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/SVProgressHUD\/SVProgressHUD",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "9E1ECC80773D1F4F22D03CB4DEA298B3CB57FAF5"
+    }
+  ]
+}

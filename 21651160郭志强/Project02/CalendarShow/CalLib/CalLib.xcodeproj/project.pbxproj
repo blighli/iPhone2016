@@ -1,0 +1,429 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		332E70671DB7107500252C8B /* Framework */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 332E70681DB7107500252C8B /* Build configuration list for PBXAggregateTarget "Framework" */;
+			buildPhases = (
+				332E706D1DB7109400252C8B /* MultiPlatform Build */,
+			);
+			dependencies = (
+				332E706C1DB7107D00252C8B /* PBXTargetDependency */,
+			);
+			name = Framework;
+			productName = Framework;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		332E70711DB751BF00252C8B /* Show.h in Headers */ = {isa = PBXBuildFile; fileRef = 332E706F1DB751BF00252C8B /* Show.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		332E70721DB751BF00252C8B /* Show.m in Sources */ = {isa = PBXBuildFile; fileRef = 332E70701DB751BF00252C8B /* Show.m */; };
+		3385A95F1DB6538500CEAF00 /* CalLib.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3385A95C1DB6538500CEAF00 /* CalLib.h */; };
+		3385A9691DB6544B00CEAF00 /* CalLib.h in Headers */ = {isa = PBXBuildFile; fileRef = 3385A95C1DB6538500CEAF00 /* CalLib.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3385A9721DB6552A00CEAF00 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3385A9711DB6552A00CEAF00 /* UIKit.framework */; };
+		3385A9921DB6565B00CEAF00 /* MYMonthView.h in Headers */ = {isa = PBXBuildFile; fileRef = 3385A98B1DB6565B00CEAF00 /* MYMonthView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3385A9931DB6565B00CEAF00 /* MYMonthView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3385A98C1DB6565B00CEAF00 /* MYMonthView.m */; };
+		3385A9941DB6565B00CEAF00 /* MYViewBuffer.h in Headers */ = {isa = PBXBuildFile; fileRef = 3385A98D1DB6565B00CEAF00 /* MYViewBuffer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3385A9951DB6565B00CEAF00 /* MYViewBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3385A98E1DB6565B00CEAF00 /* MYViewBuffer.m */; };
+		3385A9961DB6565B00CEAF00 /* MYYearView.h in Headers */ = {isa = PBXBuildFile; fileRef = 3385A98F1DB6565B00CEAF00 /* MYYearView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3385A9971DB6565B00CEAF00 /* MYYearView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3385A9901DB6565B00CEAF00 /* MYYearView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		332E706B1DB7107D00252C8B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3385A9511DB6538500CEAF00 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3385A9581DB6538500CEAF00;
+			remoteInfo = CalLib;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3385A9571DB6538500CEAF00 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				3385A95F1DB6538500CEAF00 /* CalLib.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		332E706F1DB751BF00252C8B /* Show.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Show.h; sourceTree = "<group>"; };
+		332E70701DB751BF00252C8B /* Show.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Show.m; sourceTree = "<group>"; };
+		3385A9591DB6538500CEAF00 /* libCalLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCalLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		3385A95C1DB6538500CEAF00 /* CalLib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CalLib.h; sourceTree = "<group>"; };
+		3385A9711DB6552A00CEAF00 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		3385A98B1DB6565B00CEAF00 /* MYMonthView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYMonthView.h; sourceTree = "<group>"; };
+		3385A98C1DB6565B00CEAF00 /* MYMonthView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYMonthView.m; sourceTree = "<group>"; };
+		3385A98D1DB6565B00CEAF00 /* MYViewBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYViewBuffer.h; sourceTree = "<group>"; };
+		3385A98E1DB6565B00CEAF00 /* MYViewBuffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYViewBuffer.m; sourceTree = "<group>"; };
+		3385A98F1DB6565B00CEAF00 /* MYYearView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYYearView.h; sourceTree = "<group>"; };
+		3385A9901DB6565B00CEAF00 /* MYYearView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYYearView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3385A9561DB6538500CEAF00 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3385A9721DB6552A00CEAF00 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3385A9501DB6538500CEAF00 = {
+			isa = PBXGroup;
+			children = (
+				3385A95B1DB6538500CEAF00 /* CalLib */,
+				3385A95A1DB6538500CEAF00 /* Products */,
+				3385A9701DB6552A00CEAF00 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3385A95A1DB6538500CEAF00 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3385A9591DB6538500CEAF00 /* libCalLib.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3385A95B1DB6538500CEAF00 /* CalLib */ = {
+			isa = PBXGroup;
+			children = (
+				3385A9891DB6564300CEAF00 /* myCal */,
+				3385A95C1DB6538500CEAF00 /* CalLib.h */,
+			);
+			path = CalLib;
+			sourceTree = "<group>";
+		};
+		3385A9701DB6552A00CEAF00 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3385A9711DB6552A00CEAF00 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3385A9891DB6564300CEAF00 /* myCal */ = {
+			isa = PBXGroup;
+			children = (
+				3385A98B1DB6565B00CEAF00 /* MYMonthView.h */,
+				3385A98C1DB6565B00CEAF00 /* MYMonthView.m */,
+				3385A98D1DB6565B00CEAF00 /* MYViewBuffer.h */,
+				3385A98E1DB6565B00CEAF00 /* MYViewBuffer.m */,
+				3385A98F1DB6565B00CEAF00 /* MYYearView.h */,
+				3385A9901DB6565B00CEAF00 /* MYYearView.m */,
+				332E706F1DB751BF00252C8B /* Show.h */,
+				332E70701DB751BF00252C8B /* Show.m */,
+			);
+			name = myCal;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		3385A9681DB6543C00CEAF00 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3385A9961DB6565B00CEAF00 /* MYYearView.h in Headers */,
+				3385A9941DB6565B00CEAF00 /* MYViewBuffer.h in Headers */,
+				332E70711DB751BF00252C8B /* Show.h in Headers */,
+				3385A9921DB6565B00CEAF00 /* MYMonthView.h in Headers */,
+				3385A9691DB6544B00CEAF00 /* CalLib.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		3385A9581DB6538500CEAF00 /* CalLib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3385A9621DB6538500CEAF00 /* Build configuration list for PBXNativeTarget "CalLib" */;
+			buildPhases = (
+				3385A9551DB6538500CEAF00 /* Sources */,
+				3385A9561DB6538500CEAF00 /* Frameworks */,
+				3385A9571DB6538500CEAF00 /* CopyFiles */,
+				3385A9681DB6543C00CEAF00 /* Headers */,
+				332E70661DB70E1D00252C8B /* Build Framework */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CalLib;
+			productName = CalLib;
+			productReference = 3385A9591DB6538500CEAF00 /* libCalLib.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3385A9511DB6538500CEAF00 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = Armas;
+				TargetAttributes = {
+					332E70671DB7107500252C8B = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 5568M236AT;
+						ProvisioningStyle = Automatic;
+					};
+					3385A9581DB6538500CEAF00 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 5568M236AT;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 3385A9541DB6538500CEAF00 /* Build configuration list for PBXProject "CalLib" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 3385A9501DB6538500CEAF00;
+			productRefGroup = 3385A95A1DB6538500CEAF00 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3385A9581DB6538500CEAF00 /* CalLib */,
+				332E70671DB7107500252C8B /* Framework */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		332E70661DB70E1D00252C8B /* Build Framework */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Build Framework";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\n\nexport FRAMEWORK_LOCN=\"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework\"\n\n# Create the path to the real Headers die\nmkdir -p \"${FRAMEWORK_LOCN}/Versions/A/Headers\"\n\n# Create the required symlinks\n/bin/ln -sfh A \"${FRAMEWORK_LOCN}/Versions/Current\"\n/bin/ln -sfh Versions/Current/Headers \"${FRAMEWORK_LOCN}/Headers\"\n/bin/ln -sfh \"Versions/Current/${PRODUCT_NAME}\" \\\n\"${FRAMEWORK_LOCN}/${PRODUCT_NAME}\"\n\n# Copy the public headers into the framework\n/bin/cp -a \"${TARGET_BUILD_DIR}/${PUBLIC_HEADERS_FOLDER_PATH}/\" \\\n\"${FRAMEWORK_LOCN}/Versions/A/Headers\"";
+		};
+		332E706D1DB7109400252C8B /* MultiPlatform Build */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "MultiPlatform Build";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\n\n# If we're already inside this script then die\nif [ -n \"$RW_MULTIPLATFORM_BUILD_IN_PROGRESS\" ]; then\nexit 0\nfi\nexport RW_MULTIPLATFORM_BUILD_IN_PROGRESS=1\n\nRW_FRAMEWORK_NAME=${PROJECT_NAME}\nRW_INPUT_STATIC_LIB=\"lib${PROJECT_NAME}.a\"\nRW_FRAMEWORK_LOCATION=\"${BUILT_PRODUCTS_DIR}/${RW_FRAMEWORK_NAME}.framework\"\nfunction build_static_library {\n    # Will rebuild the static library as specified\n    #     build_static_library sdk\n    xcrun xcodebuild -project \"${PROJECT_FILE_PATH}\" \\\n    -target \"${TARGET_NAME}\" \\\n    -configuration \"${CONFIGURATION}\" \\\n    -sdk \"${1}\" \\\n    ONLY_ACTIVE_ARCH=NO \\\n    BUILD_DIR=\"${BUILD_DIR}\" \\\n    OBJROOT=\"${OBJROOT}\" \\\n    BUILD_ROOT=\"${BUILD_ROOT}\" \\\n    SYMROOT=\"${SYMROOT}\" $ACTION\n}\n\nfunction make_fat_library {\n    # Will smash 2 static libs together\n    #     make_fat_library in1 in2 out\n    xcrun lipo -create \"${1}\" \"${2}\" -output \"${3}\"\n}\n# 1 - Extract the platform (iphoneos/iphonesimulator) from the SDK name\nif [[ \"$SDK_NAME\" =~ ([A-Za-z]+) ]]; then\nRW_SDK_PLATFORM=${BASH_REMATCH[1]}\nelse\necho \"Could not find platform name from SDK_NAME: $SDK_NAME\"\nexit 1\nfi\n\n# 2 - Extract the version from the SDK\nif [[ \"$SDK_NAME\" =~ ([0-9]+.*$) ]]; then\nRW_SDK_VERSION=${BASH_REMATCH[1]}\nelse\necho \"Could not find sdk version from SDK_NAME: $SDK_NAME\"\nexit 1\nfi\n\n# 3 - Determine the other platform\nif [ \"$RW_SDK_PLATFORM\" == \"iphoneos\" ]; then\nRW_OTHER_PLATFORM=iphonesimulator\nelse\nRW_OTHER_PLATFORM=iphoneos\nfi\n\n# 4 - Find the build directory\nif [[ \"$BUILT_PRODUCTS_DIR\" =~ (.*)$RW_SDK_PLATFORM$ ]]; then\nRW_OTHER_BUILT_PRODUCTS_DIR=\"${BASH_REMATCH[1]}${RW_OTHER_PLATFORM}\"\nelse\necho \"Could not find other platform build directory.\"\nexit 1\nfi\n# Build the other platform.\nbuild_static_library \"${RW_OTHER_PLATFORM}${RW_SDK_VERSION}\"\n\n# If we're currently building for iphonesimulator, then need to rebuild\n#   to ensure that we get both i386 and x86_64\nif [ \"$RW_SDK_PLATFORM\" == \"iphonesimulator\" ]; then\nbuild_static_library \"${SDK_NAME}\"\nfi\n\n# Join the 2 static libs into 1 and push into the .framework\nmake_fat_library \"${BUILT_PRODUCTS_DIR}/${RW_INPUT_STATIC_LIB}\" \\\n\"${RW_OTHER_BUILT_PRODUCTS_DIR}/${RW_INPUT_STATIC_LIB}\" \\\n\"${RW_FRAMEWORK_LOCATION}/Versions/A/${RW_FRAMEWORK_NAME}\"\n# Ensure that the framework is present in both platform's build directories\ncp -a \"${RW_FRAMEWORK_LOCATION}/Versions/A/${RW_FRAMEWORK_NAME}\" \\\n\"${RW_OTHER_BUILT_PRODUCTS_DIR}/${RW_FRAMEWORK_NAME}.framework/Versions/A/${RW_FRAMEWORK_NAME}\"\n\n# Copy the framework to the user's desktop\nditto \"${RW_FRAMEWORK_LOCATION}\" \"${HOME}/Desktop/${RW_FRAMEWORK_NAME}.framework\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3385A9551DB6538500CEAF00 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				332E70721DB751BF00252C8B /* Show.m in Sources */,
+				3385A9971DB6565B00CEAF00 /* MYYearView.m in Sources */,
+				3385A9951DB6565B00CEAF00 /* MYViewBuffer.m in Sources */,
+				3385A9931DB6565B00CEAF00 /* MYMonthView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		332E706C1DB7107D00252C8B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3385A9581DB6538500CEAF00 /* CalLib */;
+			targetProxy = 332E706B1DB7107D00252C8B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		332E70691DB7107500252C8B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 5568M236AT;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		332E706A1DB7107500252C8B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 5568M236AT;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		3385A9601DB6538500CEAF00 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PUBLIC_HEADERS_FOLDER_PATH = "include/$(PROJECT_NAME)";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3385A9611DB6538500CEAF00 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PUBLIC_HEADERS_FOLDER_PATH = "include/$(PROJECT_NAME)";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3385A9631DB6538500CEAF00 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEAD_CODE_STRIPPING = NO;
+				DEVELOPMENT_TEAM = 5568M236AT;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRIP_STYLE = "non-global";
+			};
+			name = Debug;
+		};
+		3385A9641DB6538500CEAF00 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEAD_CODE_STRIPPING = NO;
+				DEVELOPMENT_TEAM = 5568M236AT;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRIP_STYLE = "non-global";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		332E70681DB7107500252C8B /* Build configuration list for PBXAggregateTarget "Framework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				332E70691DB7107500252C8B /* Debug */,
+				332E706A1DB7107500252C8B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3385A9541DB6538500CEAF00 /* Build configuration list for PBXProject "CalLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3385A9601DB6538500CEAF00 /* Debug */,
+				3385A9611DB6538500CEAF00 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3385A9621DB6538500CEAF00 /* Build configuration list for PBXNativeTarget "CalLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3385A9631DB6538500CEAF00 /* Debug */,
+				3385A9641DB6538500CEAF00 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3385A9511DB6538500CEAF00 /* Project object */;
+}

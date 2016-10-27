@@ -1,0 +1,546 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		56F4E0A81DC09C4B00584FEC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 56F4E0A71DC09C4B00584FEC /* main.m */; };
+		56F4E0AB1DC09C4B00584FEC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 56F4E0AA1DC09C4B00584FEC /* AppDelegate.m */; };
+		56F4E0AE1DC09C4B00584FEC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56F4E0AD1DC09C4B00584FEC /* ViewController.m */; };
+		56F4E0B11DC09C4B00584FEC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56F4E0AF1DC09C4B00584FEC /* Main.storyboard */; };
+		56F4E0B31DC09C4B00584FEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56F4E0B21DC09C4B00584FEC /* Assets.xcassets */; };
+		56F4E0B61DC09C4B00584FEC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56F4E0B41DC09C4B00584FEC /* LaunchScreen.storyboard */; };
+		56F4E0C11DC09C4B00584FEC /* CYLTODOListTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 56F4E0C01DC09C4B00584FEC /* CYLTODOListTests.m */; };
+		56F4E0CC1DC09C4B00584FEC /* CYLTODOListUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 56F4E0CB1DC09C4B00584FEC /* CYLTODOListUITests.m */; };
+		56F4E0DB1DC0A9E700584FEC /* CYLAddNewItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56F4E0DA1DC0A9E700584FEC /* CYLAddNewItemViewController.m */; };
+		56F4E0DE1DC0AAFA00584FEC /* CYLToDoListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56F4E0DD1DC0AAFA00584FEC /* CYLToDoListTableViewController.m */; };
+		56F4E0E41DC0C39200584FEC /* CYLToDoItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 56F4E0E31DC0C39200584FEC /* CYLToDoItem.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		56F4E0BD1DC09C4B00584FEC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 56F4E09B1DC09C4B00584FEC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 56F4E0A21DC09C4B00584FEC;
+			remoteInfo = CYLTODOList;
+		};
+		56F4E0C81DC09C4B00584FEC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 56F4E09B1DC09C4B00584FEC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 56F4E0A21DC09C4B00584FEC;
+			remoteInfo = CYLTODOList;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		56F4E0A31DC09C4B00584FEC /* CYLTODOList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CYLTODOList.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		56F4E0A71DC09C4B00584FEC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		56F4E0A91DC09C4B00584FEC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		56F4E0AA1DC09C4B00584FEC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		56F4E0AC1DC09C4B00584FEC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		56F4E0AD1DC09C4B00584FEC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		56F4E0B01DC09C4B00584FEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		56F4E0B21DC09C4B00584FEC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		56F4E0B51DC09C4B00584FEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		56F4E0B71DC09C4B00584FEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		56F4E0BC1DC09C4B00584FEC /* CYLTODOListTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CYLTODOListTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		56F4E0C01DC09C4B00584FEC /* CYLTODOListTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CYLTODOListTests.m; sourceTree = "<group>"; };
+		56F4E0C21DC09C4B00584FEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		56F4E0C71DC09C4B00584FEC /* CYLTODOListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CYLTODOListUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		56F4E0CB1DC09C4B00584FEC /* CYLTODOListUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CYLTODOListUITests.m; sourceTree = "<group>"; };
+		56F4E0CD1DC09C4B00584FEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		56F4E0D91DC0A9E700584FEC /* CYLAddNewItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLAddNewItemViewController.h; sourceTree = "<group>"; };
+		56F4E0DA1DC0A9E700584FEC /* CYLAddNewItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLAddNewItemViewController.m; sourceTree = "<group>"; };
+		56F4E0DC1DC0AAFA00584FEC /* CYLToDoListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLToDoListTableViewController.h; sourceTree = "<group>"; };
+		56F4E0DD1DC0AAFA00584FEC /* CYLToDoListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLToDoListTableViewController.m; sourceTree = "<group>"; };
+		56F4E0E21DC0C39200584FEC /* CYLToDoItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLToDoItem.h; sourceTree = "<group>"; };
+		56F4E0E31DC0C39200584FEC /* CYLToDoItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLToDoItem.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		56F4E0A01DC09C4B00584FEC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56F4E0B91DC09C4B00584FEC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56F4E0C41DC09C4B00584FEC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		56F4E09A1DC09C4B00584FEC = {
+			isa = PBXGroup;
+			children = (
+				56F4E0A51DC09C4B00584FEC /* CYLTODOList */,
+				56F4E0BF1DC09C4B00584FEC /* CYLTODOListTests */,
+				56F4E0CA1DC09C4B00584FEC /* CYLTODOListUITests */,
+				56F4E0A41DC09C4B00584FEC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		56F4E0A41DC09C4B00584FEC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				56F4E0A31DC09C4B00584FEC /* CYLTODOList.app */,
+				56F4E0BC1DC09C4B00584FEC /* CYLTODOListTests.xctest */,
+				56F4E0C71DC09C4B00584FEC /* CYLTODOListUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		56F4E0A51DC09C4B00584FEC /* CYLTODOList */ = {
+			isa = PBXGroup;
+			children = (
+				56F4E0A91DC09C4B00584FEC /* AppDelegate.h */,
+				56F4E0AA1DC09C4B00584FEC /* AppDelegate.m */,
+				56F4E0AC1DC09C4B00584FEC /* ViewController.h */,
+				56F4E0AD1DC09C4B00584FEC /* ViewController.m */,
+				56F4E0D91DC0A9E700584FEC /* CYLAddNewItemViewController.h */,
+				56F4E0DA1DC0A9E700584FEC /* CYLAddNewItemViewController.m */,
+				56F4E0DC1DC0AAFA00584FEC /* CYLToDoListTableViewController.h */,
+				56F4E0DD1DC0AAFA00584FEC /* CYLToDoListTableViewController.m */,
+				56F4E0AF1DC09C4B00584FEC /* Main.storyboard */,
+				56F4E0B21DC09C4B00584FEC /* Assets.xcassets */,
+				56F4E0B41DC09C4B00584FEC /* LaunchScreen.storyboard */,
+				56F4E0B71DC09C4B00584FEC /* Info.plist */,
+				56F4E0A61DC09C4B00584FEC /* Supporting Files */,
+				56F4E0E21DC0C39200584FEC /* CYLToDoItem.h */,
+				56F4E0E31DC0C39200584FEC /* CYLToDoItem.m */,
+			);
+			path = CYLTODOList;
+			sourceTree = "<group>";
+		};
+		56F4E0A61DC09C4B00584FEC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				56F4E0A71DC09C4B00584FEC /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		56F4E0BF1DC09C4B00584FEC /* CYLTODOListTests */ = {
+			isa = PBXGroup;
+			children = (
+				56F4E0C01DC09C4B00584FEC /* CYLTODOListTests.m */,
+				56F4E0C21DC09C4B00584FEC /* Info.plist */,
+			);
+			path = CYLTODOListTests;
+			sourceTree = "<group>";
+		};
+		56F4E0CA1DC09C4B00584FEC /* CYLTODOListUITests */ = {
+			isa = PBXGroup;
+			children = (
+				56F4E0CB1DC09C4B00584FEC /* CYLTODOListUITests.m */,
+				56F4E0CD1DC09C4B00584FEC /* Info.plist */,
+			);
+			path = CYLTODOListUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		56F4E0A21DC09C4B00584FEC /* CYLTODOList */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 56F4E0D01DC09C4B00584FEC /* Build configuration list for PBXNativeTarget "CYLTODOList" */;
+			buildPhases = (
+				56F4E09F1DC09C4B00584FEC /* Sources */,
+				56F4E0A01DC09C4B00584FEC /* Frameworks */,
+				56F4E0A11DC09C4B00584FEC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CYLTODOList;
+			productName = CYLTODOList;
+			productReference = 56F4E0A31DC09C4B00584FEC /* CYLTODOList.app */;
+			productType = "com.apple.product-type.application";
+		};
+		56F4E0BB1DC09C4B00584FEC /* CYLTODOListTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 56F4E0D31DC09C4B00584FEC /* Build configuration list for PBXNativeTarget "CYLTODOListTests" */;
+			buildPhases = (
+				56F4E0B81DC09C4B00584FEC /* Sources */,
+				56F4E0B91DC09C4B00584FEC /* Frameworks */,
+				56F4E0BA1DC09C4B00584FEC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				56F4E0BE1DC09C4B00584FEC /* PBXTargetDependency */,
+			);
+			name = CYLTODOListTests;
+			productName = CYLTODOListTests;
+			productReference = 56F4E0BC1DC09C4B00584FEC /* CYLTODOListTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		56F4E0C61DC09C4B00584FEC /* CYLTODOListUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 56F4E0D61DC09C4B00584FEC /* Build configuration list for PBXNativeTarget "CYLTODOListUITests" */;
+			buildPhases = (
+				56F4E0C31DC09C4B00584FEC /* Sources */,
+				56F4E0C41DC09C4B00584FEC /* Frameworks */,
+				56F4E0C51DC09C4B00584FEC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				56F4E0C91DC09C4B00584FEC /* PBXTargetDependency */,
+			);
+			name = CYLTODOListUITests;
+			productName = CYLTODOListUITests;
+			productReference = 56F4E0C71DC09C4B00584FEC /* CYLTODOListUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		56F4E09B1DC09C4B00584FEC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = Sara;
+				TargetAttributes = {
+					56F4E0A21DC09C4B00584FEC = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+					56F4E0BB1DC09C4B00584FEC = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 56F4E0A21DC09C4B00584FEC;
+					};
+					56F4E0C61DC09C4B00584FEC = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 56F4E0A21DC09C4B00584FEC;
+					};
+				};
+			};
+			buildConfigurationList = 56F4E09E1DC09C4B00584FEC /* Build configuration list for PBXProject "CYLTODOList" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 56F4E09A1DC09C4B00584FEC;
+			productRefGroup = 56F4E0A41DC09C4B00584FEC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				56F4E0A21DC09C4B00584FEC /* CYLTODOList */,
+				56F4E0BB1DC09C4B00584FEC /* CYLTODOListTests */,
+				56F4E0C61DC09C4B00584FEC /* CYLTODOListUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		56F4E0A11DC09C4B00584FEC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56F4E0B61DC09C4B00584FEC /* LaunchScreen.storyboard in Resources */,
+				56F4E0B31DC09C4B00584FEC /* Assets.xcassets in Resources */,
+				56F4E0B11DC09C4B00584FEC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56F4E0BA1DC09C4B00584FEC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56F4E0C51DC09C4B00584FEC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		56F4E09F1DC09C4B00584FEC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56F4E0DE1DC0AAFA00584FEC /* CYLToDoListTableViewController.m in Sources */,
+				56F4E0E41DC0C39200584FEC /* CYLToDoItem.m in Sources */,
+				56F4E0DB1DC0A9E700584FEC /* CYLAddNewItemViewController.m in Sources */,
+				56F4E0AE1DC09C4B00584FEC /* ViewController.m in Sources */,
+				56F4E0AB1DC09C4B00584FEC /* AppDelegate.m in Sources */,
+				56F4E0A81DC09C4B00584FEC /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56F4E0B81DC09C4B00584FEC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56F4E0C11DC09C4B00584FEC /* CYLTODOListTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56F4E0C31DC09C4B00584FEC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56F4E0CC1DC09C4B00584FEC /* CYLTODOListUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		56F4E0BE1DC09C4B00584FEC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 56F4E0A21DC09C4B00584FEC /* CYLTODOList */;
+			targetProxy = 56F4E0BD1DC09C4B00584FEC /* PBXContainerItemProxy */;
+		};
+		56F4E0C91DC09C4B00584FEC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 56F4E0A21DC09C4B00584FEC /* CYLTODOList */;
+			targetProxy = 56F4E0C81DC09C4B00584FEC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		56F4E0AF1DC09C4B00584FEC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				56F4E0B01DC09C4B00584FEC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		56F4E0B41DC09C4B00584FEC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				56F4E0B51DC09C4B00584FEC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		56F4E0CE1DC09C4B00584FEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		56F4E0CF1DC09C4B00584FEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		56F4E0D11DC09C4B00584FEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CYLTODOList/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = sara.CYLTODOList;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		56F4E0D21DC09C4B00584FEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CYLTODOList/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = sara.CYLTODOList;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		56F4E0D41DC09C4B00584FEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CYLTODOListTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = sara.CYLTODOListTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CYLTODOList.app/CYLTODOList";
+			};
+			name = Debug;
+		};
+		56F4E0D51DC09C4B00584FEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CYLTODOListTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = sara.CYLTODOListTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CYLTODOList.app/CYLTODOList";
+			};
+			name = Release;
+		};
+		56F4E0D71DC09C4B00584FEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = CYLTODOListUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = sara.CYLTODOListUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = CYLTODOList;
+			};
+			name = Debug;
+		};
+		56F4E0D81DC09C4B00584FEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = CYLTODOListUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = sara.CYLTODOListUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = CYLTODOList;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		56F4E09E1DC09C4B00584FEC /* Build configuration list for PBXProject "CYLTODOList" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56F4E0CE1DC09C4B00584FEC /* Debug */,
+				56F4E0CF1DC09C4B00584FEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		56F4E0D01DC09C4B00584FEC /* Build configuration list for PBXNativeTarget "CYLTODOList" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56F4E0D11DC09C4B00584FEC /* Debug */,
+				56F4E0D21DC09C4B00584FEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		56F4E0D31DC09C4B00584FEC /* Build configuration list for PBXNativeTarget "CYLTODOListTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56F4E0D41DC09C4B00584FEC /* Debug */,
+				56F4E0D51DC09C4B00584FEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		56F4E0D61DC09C4B00584FEC /* Build configuration list for PBXNativeTarget "CYLTODOListUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56F4E0D71DC09C4B00584FEC /* Debug */,
+				56F4E0D81DC09C4B00584FEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 56F4E09B1DC09C4B00584FEC /* Project object */;
+}

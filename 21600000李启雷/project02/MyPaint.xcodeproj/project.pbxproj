@@ -10,11 +10,25 @@
 		F434A27D1DA2C90200F0B94B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F434A27C1DA2C90200F0B94B /* main.m */; };
 		F434A2801DA2C90200F0B94B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F434A27F1DA2C90200F0B94B /* AppDelegate.m */; };
 		F434A2831DA2C90200F0B94B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F434A2821DA2C90200F0B94B /* ViewController.m */; };
-		F434A2861DA2C90200F0B94B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F434A2841DA2C90200F0B94B /* Main.storyboard */; };
 		F434A2881DA2C90200F0B94B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F434A2871DA2C90200F0B94B /* Assets.xcassets */; };
-		F434A28B1DA2C90200F0B94B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F434A2891DA2C90200F0B94B /* LaunchScreen.storyboard */; };
 		F43B8A2E1DA574CF00E73AFA /* MyView.m in Sources */ = {isa = PBXBuildFile; fileRef = F43B8A2D1DA574CF00E73AFA /* MyView.m */; };
+		F4DE36FF1DAEFD2800E9A72B /* libMyCal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4DE36FA1DAEFB3700E9A72B /* libMyCal.framework */; };
+		F4DE37001DAEFD2800E9A72B /* libMyCal.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F4DE36FA1DAEFB3700E9A72B /* libMyCal.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F4DE37011DAEFD2800E9A72B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F4DE37001DAEFD2800E9A72B /* libMyCal.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		F434A2781DA2C90200F0B94B /* MyPaint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyPaint.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -23,12 +37,11 @@
 		F434A27F1DA2C90200F0B94B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		F434A2811DA2C90200F0B94B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		F434A2821DA2C90200F0B94B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		F434A2851DA2C90200F0B94B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F434A2871DA2C90200F0B94B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F434A28A1DA2C90200F0B94B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F434A28C1DA2C90200F0B94B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F43B8A2C1DA574CF00E73AFA /* MyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyView.h; sourceTree = "<group>"; };
 		F43B8A2D1DA574CF00E73AFA /* MyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyView.m; sourceTree = "<group>"; };
+		F4DE36FA1DAEFB3700E9A72B /* libMyCal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libMyCal.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4DE36FF1DAEFD2800E9A72B /* libMyCal.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,6 +59,7 @@
 		F434A26F1DA2C90100F0B94B = {
 			isa = PBXGroup;
 			children = (
+				F4DE36FA1DAEFB3700E9A72B /* libMyCal.framework */,
 				F434A27A1DA2C90200F0B94B /* MyPaint */,
 				F434A2791DA2C90200F0B94B /* Products */,
 			);
@@ -65,8 +80,6 @@
 				F434A27F1DA2C90200F0B94B /* AppDelegate.m */,
 				F434A2871DA2C90200F0B94B /* Assets.xcassets */,
 				F434A28C1DA2C90200F0B94B /* Info.plist */,
-				F434A2891DA2C90200F0B94B /* LaunchScreen.storyboard */,
-				F434A2841DA2C90200F0B94B /* Main.storyboard */,
 				F43B8A2C1DA574CF00E73AFA /* MyView.h */,
 				F43B8A2D1DA574CF00E73AFA /* MyView.m */,
 				F434A2811DA2C90200F0B94B /* ViewController.h */,
@@ -94,6 +107,7 @@
 				F434A2741DA2C90100F0B94B /* Sources */,
 				F434A2751DA2C90100F0B94B /* Frameworks */,
 				F434A2761DA2C90100F0B94B /* Resources */,
+				F4DE37011DAEFD2800E9A72B /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -143,9 +157,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F434A28B1DA2C90200F0B94B /* LaunchScreen.storyboard in Resources */,
 				F434A2881DA2C90200F0B94B /* Assets.xcassets in Resources */,
-				F434A2861DA2C90200F0B94B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,25 +176,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		F434A2841DA2C90200F0B94B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F434A2851DA2C90200F0B94B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		F434A2891DA2C90200F0B94B /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F434A28A1DA2C90200F0B94B /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		F434A28D1DA2C90200F0B94B /* Debug */ = {
@@ -278,6 +271,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = MLD828QZD4;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = MyPaint/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -291,6 +288,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = MLD828QZD4;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = MyPaint/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

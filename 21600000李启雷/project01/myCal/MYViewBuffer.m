@@ -50,10 +50,12 @@
     }
 }
 
-- (void)display
+- (void)display:(DrawBlock)draw
 {
     for(int row = 0; row < _height; row++){
-        printf("%s\n", [self rowString:row].UTF8String);
+        if(draw != nil){
+            draw([self rowString:row],row);
+        }
     }
 }
 

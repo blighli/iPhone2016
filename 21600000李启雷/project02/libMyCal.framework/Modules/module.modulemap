@@ -1,0 +1,6 @@
+framework module libMyCal {
+  umbrella header "libMyCal.h"
+
+  export *
+  module * { export * }
+}
